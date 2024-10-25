@@ -30,7 +30,7 @@ public class NpuBlocks
     public static final String GRILLE_CEILING_CAMERA_ID = "grille_ceiling_camera";
     public static final String GRILLE_CEILING_SMALLLIGHT_ID = "grille_ceiling_smalllight";
 
-    //Structure中的类
+    //原npu/Blocks/BuildBlocks/Constructions中的类
     public static final String BPUP_ID = "bpup";
     public static final String BPDOWN_ID = "bpdown";
 
@@ -46,7 +46,7 @@ public class NpuBlocks
                             .addSHAPE(0.0D, 0.0D, 0.0D, 1.0D, 0.5D, 1.0D));                                                 //添加体积，可以一直添加来细化模型
  */
 
-    //原npu/Blocks/BuildBlocks/Constructions中的类
+    //原npu/Blocks/BuildBlocks/Ceiling中的类
     public static final RegistryObject<Block> GRILLE_CEILING =
             BLOCKS.register(GRILLE_CEILING_ID, () ->
                     new NormalStructure(createBlockProperties(NpuBlocks.EnumMaterial.IRON)
