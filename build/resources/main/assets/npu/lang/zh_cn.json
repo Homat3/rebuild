@@ -1,0 +1,18 @@
+{
+  "creativemodetab.npu.npu_construction_block_tab": "NPU建筑方块",
+
+
+  "block.npu.grille_ceiling": "格栅天花板",
+  "block.npu.grille_ceiling_audio": "格栅天花板-音响",
+  "block.npu.grille_ceiling_biglight": "格栅天花板-大灯",
+  "block.npu.grille_ceiling_camera": "格栅天花板-摄像头",
+  "block.npu.grille_ceiling_smalllight": "格栅天花板-小灯",
+
+  "block.npu.bpdown": "阳台隔墙下",
+  "block.npu.bpup": "阳台隔墙上",
+
+  "entity.npu.golden_chicken": "金鸡",
+
+  "item.npu.golden_egg": "金鸡蛋",
+  "item.npu.golden_chicken_spawn_egg": "生成金鸡"
+}
