@@ -51,27 +51,27 @@ public class NpuBlocks
             BLOCKS.register(GRILLE_CEILING_ID, () ->
                     new NormalStructure(createBlockProperties(NpuBlocks.EnumMaterial.IRON)
                             .noOcclusion())
-                            .addSHAPE(0.0D, 0.0D, 0.0D, 1.0D, 0.5D, 1.0D));
+                            .addSHAPE(0.0D, 0.5D, 0.0D, 1.0D, 0.63D, 1.0D));
     public static final RegistryObject<Block> GRILLE_CEILING_AUDIO =
             BLOCKS.register(GRILLE_CEILING_AUDIO_ID, () ->
                     new NormalStructure(createBlockProperties(NpuBlocks.EnumMaterial.IRON)
                             .noOcclusion())
-                            .addSHAPE(0.0D, 0.0D, 0.0D, 1.0D, 0.5D, 1.0D));
+                            .addSHAPE(0.0D, 0.5D, 0.0D, 1.0D, 0.63D, 1.0D));
     public static final RegistryObject<Block> GRILLE_CEILING_BIGLIGHT =
             BLOCKS.register(GRILLE_CEILING_BIGLIGHT_ID, () ->
                     new NormalStructure(createBlockProperties(NpuBlocks.EnumMaterial.IRON)
                             .noOcclusion())
-                            .addSHAPE(0.0D, 0.0D, 0.0D, 1.0D, 0.5D, 1.0D));
+                            .addSHAPE(0.0D, 0.5D, 0.0D, 1.0D, 0.75D, 1.0D));
     public static final RegistryObject<Block> GRILLE_CEILING_CAMERA =
             BLOCKS.register(GRILLE_CEILING_CAMERA_ID, () ->
                     new NormalStructure(createBlockProperties(NpuBlocks.EnumMaterial.IRON)
                             .noOcclusion())
-                            .addSHAPE(0.0D, 0.0D, 0.0D, 1.0D, 0.5D, 1.0D));
+                            .addSHAPE(0.0D, 0.5D, 0.0D, 1.0D, 0.63D, 1.0D));
     public static final RegistryObject<Block> GRILLE_CEILING_SMALLLIGHT =
             BLOCKS.register(GRILLE_CEILING_SMALLLIGHT_ID, () ->
                     new NormalStructure(createBlockProperties(NpuBlocks.EnumMaterial.IRON)
                             .noOcclusion())
-                            .addSHAPE(0.0D, 0.0D, 0.0D, 1.0D, 0.5D, 1.0D));
+                            .addSHAPE(0.0D, 0.5D, 0.0D, 1.0D, 0.63D, 1.0D));
 
     //原npu/Blocks/BuildBlocks/Constructions中的类
     public static final RegistryObject<HorizontalDirectionalBlock> BPUP =
@@ -94,9 +94,9 @@ public class NpuBlocks
     //一些常用属性
     public static enum EnumMaterial
     {
-        //EXAMPLE("example", 硬度, 音效包, (BlockState state) ->{根据不同的blockstate返回不同的亮度值},滑的程度),
-        IRON("iron", 5.0F, SoundType.METAL, (BlockState state) ->{return 0;},0.00F),
-        ROCK("rock", 2.5F, SoundType.STONE, (BlockState state) ->{return 0;},0.00F);
+        //EXAMPLE("example", 硬度, 音效包, (BlockState state) ->{根据不同的blockstate返回不同的亮度值}, 阻力系数，即站在上面的移速),
+        IRON("iron", 5.0F, SoundType.METAL, (BlockState state) ->{return 0;},0.6F),
+        ROCK("rock", 2.5F, SoundType.STONE, (BlockState state) ->{return 0;},0.6F);
 
 
         private final String name;
