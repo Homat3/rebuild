@@ -5,381 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7daf129-594f-42ee-aa98-8cab2d1870f2" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.gradle/8.8/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.8/checksums/md5-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.8/checksums/sha1-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.8/dependencies-accessors/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.8/expanded/expanded.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.8/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.8/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/modules/rebuild.main.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/modules/rebuild.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/_applyBinpatches_2/log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/_atJar_4/accesstransform.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/_atJar_4/log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/_atJar_4/parent_at.cfg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/_compileJava_3/mcp/client/Start.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/tf/npu/Config.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/tf/npu/NPU$ClientModEvents.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/tf/npu/NPU.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/tf/npu/blocks/NpuBlocks$EmunShape.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/tf/npu/blocks/NpuBlocks$EnumMaterial.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/tf/npu/blocks/NpuBlocks.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/tf/npu/blocks/npublocknewclasses/DirectionalStructure$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/tf/npu/blocks/npublocknewclasses/DirectionalStructure.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/tf/npu/blocks/npublocknewclasses/HorizontalDirectionalStructure$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/tf/npu/blocks/npublocknewclasses/HorizontalDirectionalStructure.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/tf/npu/blocks/npublocknewclasses/NormalStructure.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/tf/npu/creativemodtab/CreativeModeTab.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/tf/npu/creativemodtab/NpuCreativeModeTabs.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/tf/npu/entities/NpuEntities.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/tf/npu/entities/NpuEntitySubscriber.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/tf/npu/entities/npuentitynewclasses/npuentities/GoldenChicken.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/tf/npu/entities/npuentitynewclasses/npuentityrenderers/GoldenChickenRenderer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/tf/npu/items/NpuItems.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/tf/npu/util/Logger.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/tf/npu/util/Reference.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/tf/npu/util/Register.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classpath/runClient_minecraftClasspath.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/createMcpToSrg/output.tsrg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/createSrgToMcp/output.srg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/downloadMCMeta/version.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/downloadMcpConfig/output.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/extractSrg/output.srg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/META-INF/mods.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/blockstates/bpdown.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/blockstates/bpup.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/blockstates/grille_ceiling.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/blockstates/grille_ceiling_audio.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/blockstates/grille_ceiling_biglight.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/blockstates/grille_ceiling_camera.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/blockstates/grille_ceiling_smalllight.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/lang/zh_cn.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/models/block/grille_ceiling/grille_ceiling.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/models/block/grille_ceiling/grille_ceiling_audio.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/models/block/grille_ceiling/grille_ceiling_biglight.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/models/block/grille_ceiling/grille_ceiling_camera.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/models/block/grille_ceiling/grille_ceiling_smalllight.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/models/block/structure/bpdown.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/models/block/structure/bpup.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/models/item/bpdown.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/models/item/bpup.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/models/item/golden_chicken_spawn_egg.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/models/item/golden_egg.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/models/item/grille_ceiling.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/models/item/grille_ceiling_audio.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/models/item/grille_ceiling_biglight.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/models/item/grille_ceiling_camera.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/models/item/grille_ceiling_smalllight.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/clay/clay.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/clay/hardened/hardened_clay.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/clay/hardened/hardened_clay_stained_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/clay/hardened/hardened_clay_stained_blue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/clay/hardened/hardened_clay_stained_brown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/clay/hardened/hardened_clay_stained_cyan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/clay/hardened/hardened_clay_stained_gray.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/clay/hardened/hardened_clay_stained_green.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/clay/hardened/hardened_clay_stained_light_blue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/clay/hardened/hardened_clay_stained_lime.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/clay/hardened/hardened_clay_stained_magenta.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/clay/hardened/hardened_clay_stained_orange.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/clay/hardened/hardened_clay_stained_pink.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/clay/hardened/hardened_clay_stained_purple.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/clay/hardened/hardened_clay_stained_red.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/clay/hardened/hardened_clay_stained_silver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/clay/hardened/hardened_clay_stained_white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/clay/hardened/hardened_clay_stained_yellow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/concrete/concrete_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/concrete/concrete_blue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/concrete/concrete_brown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/concrete/concrete_cyan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/concrete/concrete_gray.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/concrete/concrete_green.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/concrete/concrete_light_blue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/concrete/concrete_lime.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/concrete/concrete_magenta.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/concrete/concrete_orange.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/concrete/concrete_pink.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/concrete/concrete_powder_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/concrete/concrete_powder_blue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/concrete/concrete_powder_brown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/concrete/concrete_powder_cyan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/concrete/concrete_powder_gray.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/concrete/concrete_powder_green.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/concrete/concrete_powder_light_blue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/concrete/concrete_powder_lime.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/concrete/concrete_powder_magenta.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/concrete/concrete_powder_orange.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/concrete/concrete_powder_pink.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/concrete/concrete_powder_purple.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/concrete/concrete_powder_red.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/concrete/concrete_powder_silver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/concrete/concrete_powder_white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/concrete/concrete_powder_yellow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/concrete/concrete_powder_yellow1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/concrete/concrete_purple.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/concrete/concrete_red.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/concrete/concrete_silver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/concrete/concrete_silver1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/concrete/concrete_white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/concrete/concrete_yellow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/npunew/structure/bpup.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/ore/iron/iron_bars.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/ore/iron/iron_block.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/ore/iron/iron_block1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/ore/iron/iron_ore.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/ore/iron/iron_trapdoor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/ore/quartz/quartz_block_bottom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/ore/quartz/quartz_block_chiseled.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/ore/quartz/quartz_block_chiseled_top.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/ore/quartz/quartz_block_lines.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/ore/quartz/quartz_block_lines_top.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/ore/quartz/quartz_block_side.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/ore/quartz/quartz_block_top.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/ore/quartz/quartz_ore.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/stone/stone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/stone/stone_andesite.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/stone/stone_andesite_smooth.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/stone/stone_diorite.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/stone/stone_diorite_smooth.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/stone/stone_granite.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/stone/stone_granite_smooth.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/stone/stone_slab_side.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/stone/stone_slab_top.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/stone/stonebrick.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/stone/stonebrick_carved.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/stone/stonebrick_cracked.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/stone/stonebrick_mossy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/stone/stoner.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/block/stone/stoner1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/entity/golden_chicken.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/npu/textures/item/golden_egg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/data/npu/loot_tables/entities/golden_chicken.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/pack.mcmeta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/tmp/.cache/expanded/zip_e38c7b1572572a9143f4c4d90e354b25/mcp/client/Start.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/DirectionalStructure$1.class.uniqueId0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/DirectionalStructure.class.uniqueId4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/NpuBlocks$EmunShape.class.uniqueId3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/NpuBlocks$EnumMaterial.class.uniqueId1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/NpuBlocks.class.uniqueId2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/config/fml.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/config/forge-client.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/config/npu-common.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2024-10-22_00.33.29-client.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2024-10-22_00.34.11-client.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2024-10-22_00.35.56-client.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2024-10-22_00.38.11-client.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2024-10-22_00.39.28-client.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2024-10-22_00.44.05-client.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2024-10-22_00.45.10-client.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2024-10-22_00.50.54-client.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2024-10-22_01.04.19-client.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2024-10-23_13.30.29-client.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2024-10-23_15.26.38-client.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2024-10-23_15.28.43-client.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2024-10-23_15.29.27-client.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2024-10-24_00.21.21-server.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2024-10-24_00.24.54-server.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2024-10-24_00.28.24-server.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2024-10-24_21.36.05-client.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2024-10-24_21.37.36-client.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2024-10-24_21.50.39-client.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2024-10-24_21.56.57-client.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2024-10-25_16.12.02-fml.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2024-10-25_16.13.19-fml.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2024-10-25_16.15.34-fml.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2024-10-25_16.18.20-fml.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-22-10.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-22-11.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-22-12.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-22-13.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-22-14.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-22-15.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-22-16.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-22-17.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-22-18.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-22-19.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-22-2.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-22-20.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-22-21.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-22-22.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-22-23.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-22-24.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-22-25.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-22-26.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-22-27.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-22-28.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-22-29.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-22-3.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-22-30.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-22-31.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-22-32.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-22-33.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-22-34.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-22-35.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-22-4.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-22-5.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-22-6.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-22-7.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-22-8.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-22-9.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-10.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-11.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-12.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-13.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-14.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-15.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-16.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-17.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-18.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-19.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-2.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-20.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-21.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-22.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-23.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-24.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-25.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-26.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-27.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-28.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-29.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-3.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-30.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-31.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-32.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-33.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-34.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-35.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-36.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-37.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-38.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-39.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-4.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-40.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-41.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-42.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-43.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-44.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-45.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-46.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-47.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-48.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-49.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-5.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-50.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-51.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-52.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-53.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-54.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-55.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-56.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-6.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-7.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-8.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-23-9.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-24-10.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-24-11.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-24-12.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-24-13.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-24-14.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-24-15.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-24-16.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-24-17.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-24-18.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-24-19.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-24-2.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-24-20.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-24-21.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-24-22.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-24-23.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-24-24.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-24-25.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-24-26.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-24-3.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-24-4.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-24-5.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-24-6.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-24-7.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-24-8.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-24-9.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-25-1.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-25-2.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-25-3.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-25-4.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-25-5.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2024-10-25-6.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/debug-4.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/debug-5.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/options.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/DIM-1/data/capabilities.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/DIM-1/data/raids.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/DIM1/data/capabilities.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/DIM1/data/raids_end.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/advancements/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/data/capabilities.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/data/raids.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/data/random_sequences.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/entities/r.-1.-1.mca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/entities/r.-1.0.mca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/entities/r.0.-1.mca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/entities/r.0.0.mca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/level.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/level.dat_old" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/playerdata/380df991-f603-344c-a090-369bad2a924a.dat_old" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/poi/r.-1.-1.mca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/poi/r.-1.0.mca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/poi/r.-1.1.mca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/poi/r.0.-1.mca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/poi/r.0.0.mca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/poi/r.0.1.mca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/poi/r.1.-1.mca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/poi/r.1.0.mca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/poi/r.1.1.mca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/region/r.-1.-1.mca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/region/r.-1.0.mca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/region/r.-1.1.mca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/region/r.0.-1.mca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/region/r.0.0.mca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/region/r.0.1.mca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/region/r.1.-1.mca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/region/r.1.0.mca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/region/r.1.1.mca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/serverconfig/forge-server.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/session.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/新的世界/stats/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/usernamecache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/TEXT/DIM-1/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/TEXT/DIM-1/data/raids.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/TEXT/DIM1/data/raids_end.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/TEXT/DIM1/data/raids_end.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/TEXT/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/TEXT/data/raids.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/TEXT/entities/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/TEXT/entities/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/TEXT/entities/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/TEXT/entities/r.-1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/TEXT/entities/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/TEXT/entities/r.0.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/TEXT/entities/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/TEXT/entities/r.0.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/TEXT/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/TEXT/level.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/TEXT/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/TEXT/level.dat_old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/TEXT/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/TEXT/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/TEXT/playerdata/380df991-f603-344c-a090-369bad2a924a.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/TEXT/playerdata/380df991-f603-344c-a090-369bad2a924a.dat_old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/TEXT/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/TEXT/region/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/TEXT/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/TEXT/region/r.-1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/TEXT/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/TEXT/region/r.0.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/TEXT/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/TEXT/region/r.0.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/TEXT/stats/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/TEXT/stats/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -446,25 +107,27 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.D:/Document/Java/McMod/rebuild [createMcpToSrg].executor": "Run",
-    "Gradle.rebuild [createMcpToSrg].executor": "Run",
-    "Gradle.rebuild [runClient].executor": "Run",
-    "Gradle.构建 rebuild.executor": "Run",
-    "JavaMethodFindUsagesOptions.isOverridingMethods": "true",
-    "JavaMethodFindUsagesOptions.isSearchForTextOccurrences": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Document/Java/McMod/build-the-world-for-npu-master",
-    "project.structure.last.edited": "问题",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Gradle.D:/Document/Java/McMod/rebuild [createMcpToSrg].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.rebuild [createMcpToSrg].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.rebuild [runClient].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.构建 rebuild.executor&quot;: &quot;Run&quot;,
+    &quot;JavaMethodFindUsagesOptions.isOverridingMethods&quot;: &quot;true&quot;,
+    &quot;JavaMethodFindUsagesOptions.isSearchForTextOccurrences&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Document/Java/McMod/rebuild&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;问题&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Document\Java\McMod\rebuild" />
