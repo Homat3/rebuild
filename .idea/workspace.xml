@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7daf129-594f-42ee-aa98-8cab2d1870f2" name="更改" comment="" />
+    <list default="true" id="c7daf129-594f-42ee-aa98-8cab2d1870f2" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tf/npu/blocks/NpuBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tf/npu/blocks/NpuBlocks.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

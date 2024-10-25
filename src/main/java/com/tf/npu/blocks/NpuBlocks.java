@@ -23,7 +23,7 @@ public class NpuBlocks
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Reference.MODID);
 
     //新方块ID表
-    //GrilleCeiling中的类
+    //原npu/Blocks/BuildBlocks/Ceiling中的类
     public static final String GRILLE_CEILING_ID = "grille_ceiling";
     public static final String GRILLE_CEILING_AUDIO_ID = "grille_ceiling_audio";
     public static final String GRILLE_CEILING_BIGLIGHT_ID = "grille_ceiling_biglight";
@@ -46,7 +46,7 @@ public class NpuBlocks
                             .addSHAPE(0.0D, 0.0D, 0.0D, 1.0D, 0.5D, 1.0D));                                                 //添加体积，可以一直添加来细化模型
  */
 
-    //原npu/Blocks/BuildBlocks/Ceiling中的类
+    //原npu/Blocks/BuildBlocks/Constructions中的类
     public static final RegistryObject<Block> GRILLE_CEILING =
             BLOCKS.register(GRILLE_CEILING_ID, () ->
                     new NormalStructure(createBlockProperties(NpuBlocks.EnumMaterial.IRON)
