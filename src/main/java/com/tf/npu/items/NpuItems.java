@@ -10,6 +10,8 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+import java.util.ArrayList;
+
 public class NpuItems
 {
     // Create a Deferred Register to hold items which will all be registered under the "npu" namespace
@@ -18,25 +20,15 @@ public class NpuItems
 
     //////////////////////////////////////////////BlockItem/////////////////////////////////////////////////////////
 
-    //新方块物品注册表
-
-    //原npu/Blocks/BuildBlocks/Ceiling中的类
-    public static final RegistryObject<BlockItem> GRILLE_CEILING_ITEM =
-            ITEMS.register(NpuBlocks.GRILLE_CEILING_ID, () -> new BlockItem(NpuBlocks.GRILLE_CEILING.get(), new Item.Properties()));
-    public static final RegistryObject<BlockItem> GRILLE_CEILING_AUDIO_ITEM =
-            ITEMS.register(NpuBlocks.GRILLE_CEILING_AUDIO_ID, () -> new BlockItem(NpuBlocks.GRILLE_CEILING_AUDIO.get(), new Item.Properties()));
-    public static final RegistryObject<BlockItem> GRILLE_CEILING_BIGLIGHT_ITEM =
-            ITEMS.register(NpuBlocks.GRILLE_CEILING_BIGLIGHT_ID, () -> new BlockItem(NpuBlocks.GRILLE_CEILING_BIGLIGHT.get(), new Item.Properties()));
-    public static final RegistryObject<BlockItem> GRILLE_CEILING_CAMERA_ITEM =
-            ITEMS.register(NpuBlocks.GRILLE_CEILING_CAMERA_ID, () -> new BlockItem(NpuBlocks.GRILLE_CEILING_CAMERA.get(), new Item.Properties()));
-    public static final RegistryObject<BlockItem> GRILLE_CEILING_SMALLLIGHT_ITEM =
-            ITEMS.register(NpuBlocks.GRILLE_CEILING_SMALLLIGHT_ID, () -> new BlockItem(NpuBlocks.GRILLE_CEILING_SMALLLIGHT.get(), new Item.Properties()));
-
-    //原npu/Blocks/BuildBlocks/Constructions中的类
-    public static final RegistryObject<BlockItem> BPUP_ITEM =
-            ITEMS.register(NpuBlocks.BPUP_ID, () -> new BlockItem(NpuBlocks.BPUP.get(), new Item.Properties()));
-    public static final RegistryObject<BlockItem> BPDOWN_ITEM =
-            ITEMS.register(NpuBlocks.BPDOWN_ID, () -> new BlockItem(NpuBlocks.BPDOWN.get(), new Item.Properties()));
+    public static final ArrayList<RegistryObject<BlockItem>> construction_block_item_List = new ArrayList<>(0);
+    static
+    {
+        for (var BLOCK : NpuBlocks.ConstructionBlock_List)
+        {
+            construction_block_item_List.add(
+                    ITEMS.register(NpuBlocks.ConstructionBlockID_Map.get(BLOCK), () -> new BlockItem(BLOCK.get(), new Item.Properties())));
+        }
+    }
 
     //////////////////////////////////////////////////Item///////////////////////////////////////////////////////////
 

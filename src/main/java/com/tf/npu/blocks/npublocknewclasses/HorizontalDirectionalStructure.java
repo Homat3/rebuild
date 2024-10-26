@@ -1,5 +1,6 @@
 package com.tf.npu.blocks.npublocknewclasses;
 
+import com.tf.npu.blocks.DataOfNpuBlocks.ShapeData;
 import com.tf.npu.blocks.NpuBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -28,26 +29,27 @@ public class HorizontalDirectionalStructure extends HorizontalDirectionalBlock
     //方向属性
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 
-    //材料
-    public NpuBlocks.EnumMaterial material;
-
     //构造
     public HorizontalDirectionalStructure(BlockBehaviour.Properties properties)
     {
         super(properties);
     }
     //与构造并用
-    public HorizontalDirectionalStructure addSHAPE(double a, double b, double c, double d, double e, double f)
+    public HorizontalDirectionalStructure setSHAPE(ShapeData shapeData)
     {
-        GetSHAPE.putIfAbsent(this, new ArrayList<VoxelShape>(1));
-        GetSHAPE.get(this).add(Shapes.box(a, b, c, d, e, f));
+        for (List<Double> shape : shapeData.getShapeList())
+        {
+            GetSHAPE.putIfAbsent(this, new ArrayList<>(1));
+            GetSHAPE.get(this).add(Shapes.box(shape.get(0), shape.get(1), shape.get(2), shape.get(3), shape.get(4), shape.get(5)));
+        }
+
         return this;
     }
 
     //旋转坐标变换
     protected VoxelShape getShapeByDirection(VoxelShape shape, Direction direction)
     {
-        double[] pos = new double[6];
+        Double[] pos = new Double[6];
         {
             pos[0] = shape.bounds().minX;
             pos[1] = shape.bounds().minY;
@@ -86,7 +88,7 @@ public class HorizontalDirectionalStructure extends HorizontalDirectionalBlock
         VoxelShape shape = NpuBlocks.EmunShape.NULL_SHPAE.getShape();
         List<VoxelShape> list = List.copyOf(GetSHAPE.get(this));
 
-        for (VoxelShape voxelShape : GetSHAPE.get(this))
+        for (VoxelShape voxelShape : list)
         {
             shape = Shapes.or(shape, getShapeByDirection(voxelShape, pState.getValue(FACING)));
         }

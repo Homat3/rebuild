@@ -41,18 +41,13 @@ public class NpuCreativeModeTabs
     public static final RegistryObject<CreativeModeTab> NPU_CONSTRUCTION_BLOCK_TAB = CREATIVE_MODE_TABS.register(NPU_CONSTRUCTION_BLOCK_TAB_ID, () -> CreativeModeTab.builder()
             .title(Component.translatable("creativemodetab.npu." + NPU_CONSTRUCTION_BLOCK_TAB_ID))
             .withTabsBefore(CreativeModeTabs.COMBAT)
-            .icon(() -> new ItemStack(NpuItems.GRILLE_CEILING_ITEM.get()))
+            //.icon(() -> new ItemStack(NpuItems.GRILLE_CEILING_ITEM.get()))
             .displayItems(((itemDisplayParameters, output) ->
                 {
                     Logger.LOGGER.info("Adding NPU items to NpuCreativeModeTab >> {}", NPU_CONSTRUCTION_BLOCK_TAB_ID);
-                    output.accept(NpuItems.GRILLE_CEILING_ITEM.get());
-                    output.accept(NpuItems.GRILLE_CEILING_AUDIO_ITEM.get());
-                    output.accept(NpuItems.GRILLE_CEILING_BIGLIGHT_ITEM.get());
-                    output.accept(NpuItems.GRILLE_CEILING_CAMERA_ITEM.get());
-                    output.accept(NpuItems.GRILLE_CEILING_SMALLLIGHT_ITEM.get());
 
-                    output.accept(NpuItems.BPUP_ITEM.get());
-                    output.accept(NpuItems.BPDOWN_ITEM.get());
+                    for (var ITEM : NpuItems.construction_block_item_List)
+                        output.accept(ITEM.get());
                 }
                 ))
             .build());

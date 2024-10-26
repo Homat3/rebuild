@@ -5,7 +5,83 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7daf129-594f-42ee-aa98-8cab2d1870f2" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tf/npu/blocks/DataOfNpuBlocks/DataOfNpuBlocks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tf/npu/blocks/DataOfNpuBlocks/ShapeData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tf/npu/util/FileDataGetter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tf/npu/util/FolderDataGetter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/npu/blockstates/data/construction_block/bpdown.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/npu/blockstates/data/construction_block/bpup.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/npu/blockstates/data/construction_block/grille_ceiling.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/npu/blockstates/data/construction_block/grille_ceiling_audio.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/npu/blockstates/data/construction_block/grille_ceiling_biglight.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/npu/blockstates/data/construction_block/grille_ceiling_camera.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/npu/blockstates/data/construction_block/grille_ceiling_smalllight.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Instructions.md" beforeDir="false" afterPath="$PROJECT_DIR$/Instructions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/tf/npu/blocks/NpuBlocks$EmunShape.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/tf/npu/blocks/NpuBlocks$EmunShape.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/tf/npu/blocks/NpuBlocks$EnumMaterial.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/tf/npu/blocks/NpuBlocks$EnumMaterial.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/tf/npu/blocks/NpuBlocks.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/tf/npu/blocks/NpuBlocks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/tf/npu/blocks/npublocknewclasses/HorizontalDirectionalStructure$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/tf/npu/blocks/npublocknewclasses/HorizontalDirectionalStructure$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/tf/npu/blocks/npublocknewclasses/HorizontalDirectionalStructure.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/tf/npu/blocks/npublocknewclasses/HorizontalDirectionalStructure.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/tf/npu/blocks/npublocknewclasses/NormalStructure.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/tf/npu/blocks/npublocknewclasses/NormalStructure.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/tf/npu/creativemodtab/NpuCreativeModeTabs.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/tf/npu/creativemodtab/NpuCreativeModeTabs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/tf/npu/items/NpuItems.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/tf/npu/items/NpuItems.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/HorizontalDirectionalStructure$1.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/HorizontalDirectionalStructure$1.class.uniqueId0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/HorizontalDirectionalStructure.class.uniqueId4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/NormalStructure.class.uniqueId7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/NpuBlocks$EmunShape.class.uniqueId6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/NpuBlocks$EnumMaterial.class.uniqueId3" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/NpuBlocks$EnumMaterial.class.uniqueId3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/NpuBlocks.class.uniqueId5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/NpuItems.class.uniqueId1" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/NpuItems.class.uniqueId1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2024-10-25-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2024-10-25-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2024-10-25-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2024-10-25-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2024-10-25-3.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2024-10-25-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2024-10-25-4.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2024-10-25-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2024-10-25-5.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2024-10-25-6.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2024-10-25-6.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2024-10-25-7.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2024-10-25-7.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2024-10-25-8.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2024-10-25-8.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2024-10-25-9.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2024-10-25-9.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-4.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-5.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/TEXT/DIM-1/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/TEXT/DIM-1/data/raids.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/TEXT/DIM1/data/raids_end.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/TEXT/DIM1/data/raids_end.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/TEXT/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/TEXT/data/raids.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/TEXT/entities/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/TEXT/entities/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/TEXT/entities/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/TEXT/entities/r.-1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/TEXT/entities/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/TEXT/entities/r.0.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/TEXT/entities/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/TEXT/entities/r.0.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/TEXT/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/TEXT/level.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/TEXT/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/TEXT/level.dat_old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/TEXT/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/TEXT/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/TEXT/playerdata/380df991-f603-344c-a090-369bad2a924a.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/TEXT/playerdata/380df991-f603-344c-a090-369bad2a924a.dat_old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/TEXT/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/TEXT/region/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/TEXT/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/TEXT/region/r.-1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/TEXT/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/TEXT/region/r.0.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/TEXT/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/TEXT/region/r.0.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/TEXT/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/TEXT/session.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/TEXT/stats/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/TEXT/stats/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tf/npu/blocks/NpuBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tf/npu/blocks/NpuBlocks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tf/npu/blocks/npublocknewclasses/HorizontalDirectionalStructure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tf/npu/blocks/npublocknewclasses/HorizontalDirectionalStructure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tf/npu/blocks/npublocknewclasses/NormalStructure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tf/npu/blocks/npublocknewclasses/NormalStructure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tf/npu/creativemodtab/NpuCreativeModeTabs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tf/npu/creativemodtab/NpuCreativeModeTabs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tf/npu/items/NpuItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tf/npu/items/NpuItems.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,41 +148,41 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Gradle.D:/Document/Java/McMod/rebuild [createMcpToSrg].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.rebuild [createMcpToSrg].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.rebuild [runClient].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.构建 rebuild.executor&quot;: &quot;Run&quot;,
-    &quot;JavaMethodFindUsagesOptions.isOverridingMethods&quot;: &quot;true&quot;,
-    &quot;JavaMethodFindUsagesOptions.isSearchForTextOccurrences&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Document/Java/McMod/rebuild&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;问题&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Gradle.D:/Document/Java/McMod/rebuild [createMcpToSrg].executor": "Run",
+    "Gradle.rebuild [createMcpToSrg].executor": "Run",
+    "Gradle.rebuild [runClient].executor": "Run",
+    "Gradle.构建 rebuild.executor": "Run",
+    "JavaMethodFindUsagesOptions.isOverridingMethods": "true",
+    "JavaMethodFindUsagesOptions.isSearchForTextOccurrences": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Document/Java/McMod/rebuild/src/main/resources/assets/npu/blockstates/data",
+    "project.structure.last.edited": "问题",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Document\Java\McMod\rebuild\src\main\resources\assets\npu\blockstates\data" />
+      <recent name="D:\Document\Java\McMod\rebuild\src\main\resources\data\npu\block_data" />
       <recent name="D:\Document\Java\McMod\rebuild" />
       <recent name="D:\Document\Java\McMod\rebuild\src\main\resources\assets\npu\textures\entity" />
       <recent name="D:\Document\Java\McMod\rebuild\src\main\resources\assets\npu\textures\item\golden_chicken" />
-      <recent name="D:\Document\Java\McMod\rebuild\src\main\resources\assets\npu\models\item" />
-      <recent name="D:\Document\Java\McMod\rebuild\src\main\resources\assets\npu\textures\block\stone" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Document\Java\McMod\rebuild\src\main\resources\assets\npu\blockstates\data\construction_block" />
+      <recent name="D:\Document\Java\McMod\rebuild\src\main\resources\assets\npu\blockstates" />
+      <recent name="D:\Document\Java\McMod\rebuild\src\main\resources\assets\npu" />
       <recent name="D:\Document\Java\McMod\rebuild\src\main\resources\assets\npu\textures\item" />
       <recent name="D:\Document\Java\McMod\rebuild\src\main\resources\assets\npu\textures\block\npunew\structrue" />
-      <recent name="D:\Document\Java\McMod\rebuild\src\main\resources\assets\npu\models\item" />
-      <recent name="D:\Document\Java\McMod\rebuild\src\main\resources\assets\npu\models" />
-      <recent name="D:\Document\Java\McMod\rebuild\src\main\resources\assets\npu\textures\block" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.tf.npu.entities.npuentitynewclasses" />
@@ -160,5 +236,30 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.0_mapped_official_1.20.1/forge-1.20.1-47.3.0_mapped_official_1.20.1.jar!/net/minecraft/client/Minecraft.class</url>
+          <line>781</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>jar://$USER_HOME$/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.0_mapped_official_1.20.1/forge-1.20.1-47.3.0_mapped_official_1.20.1.jar!/net/minecraft/client/Minecraft.class</url>
+          <line>1381</line>
+          <properties class="net.minecraft.client.Minecraft" method="emergencySave">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="GradleRunConfiguration">
+        <watch expression="this" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

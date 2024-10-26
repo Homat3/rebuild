@@ -9,8 +9,9 @@ Made by Homat3
 ## 重构结构简述
 - npu
     - blocks  
-        - npublocknewclasses              新方块的母体
-        - NpuBlocks.class                 一切新方块应该在此注册
+        - DataOfNpuBlocks                 新方块的属性数据
+        - npublocknewclasses              新方块的模板
+        - NpuBlocks.class                 一切新方块将在此自动注册
     - creativemodtab
         - CreativeModeTab.class           用于向原版创造模式物品栏添加新物品
         - NpuCreativeModeTabs.class       一切新创造模式物品栏应该在此注册
@@ -22,8 +23,10 @@ Made by Homat3
         - NpuEntitySubscriber.class       向事件加入新实体与新渲染方式的链接
     - items
         - npuentitynewclasses             新物品的母体（照目前看貌似不太需要）
-        - NpuItems.class                  一切模组物品（包括方块物品）应该在此注册
+        - NpuItems.class                  一切模组物品（包括方块物品）将在此自动注册
     - util                                一些工具，一般不用改它
+        - FileDataGetter                  获取文件的json数据
+        - FolderDataGetter                获取文件夹的json数据
         - Logger.class                    用于输出日志
         - Reference.class                 用于获得模组基本信息
         - Register.class                  用于提供新东西的注册器
@@ -31,15 +34,12 @@ Made by Homat3
     - NPU                                 主类（一般不动它）
 
 ## 如何操作
-大部分操作都可套用示例完成，不要乱删注释
 
 ### 注册新方块
-注意涉及到的不同的字段命名EXAMPLE,EXAMPLE_ID,EXAMPLE_ITEM,EXAMPLE_ITEM_ID  
-注意不要修改原模组中的方块ID，不然移植后Minecraft认不得
+注意少修改原模组中的方块ID，因为移植后Minecraft会认不得
 
 1. 根据原模组中方块的信息判断是哪种方块（Normal/HorizontalDirectional后续会加入更多类型的模板）
-2. 在NpuBlocks.class中相应位置使用对应的类注册该方块（声明方块字段以及对应方块ID字段），这里注意有些方块的碰撞体积需要修改，原模组不知道为啥有些问题
-3. 在NpuItems.class中相应位置注册对应物品（声明物品字段以及对应物品ID字段）
+2. 将属性写入json文件中并存放到blockstates/data下
 4. 在CreativeModeTab或者NpuCreativeModeTab中注册到物品栏里（可选，因为此时已经可以用指令获得了）
 5. 从原模组资源文件中导入资源，导入前记得搜索一下重构模组这里是不是已经有了，而且需要对导入的json文件中的一些路径进行修改
 
@@ -47,7 +47,7 @@ Made by Homat3
 
 NpuBlocks.class里声明了常用材料属性和常用体积模型属性的枚举，有需求可以自己加
 
-### 注册新物品
+### 注册新物品  （即将修改）
 注意涉及到的不同的字段命名EXAMPLE,EXAMPLE_ID
 
 1. 在NpuItems.class中相应位置注册物品（声明物品字段以及对应物品ID字段）
@@ -75,6 +75,9 @@ NpuBlocks.class里声明了常用材料属性和常用体积模型属性的枚�
 注意涉及到的不同的字段命名EXAMPLE_TAB,EXAMPLE_TAB_ID
 
 1. 在NpuCreativeModeTab中相应位置注册（声明物品栏字段以及对应物品栏ID字段）
+2. 在NpuBlocks中声明相应的Block列表及其初始化（还需在blockstates/data中创建相应目录）
+3. 在NpuBlocks中声明相应的Item列表及其初始化
+4. 将Item列表遍历加入
 
 ## 后记
 -有新的模板或API的需求或者已有的模板或API有更优化的方案可以告诉我

@@ -1,10 +1,13 @@
 package com.tf.npu.blocks;
 
+import com.tf.npu.blocks.DataOfNpuBlocks.DataOfNpuBlocks;
+import com.tf.npu.blocks.DataOfNpuBlocks.ShapeData;
 import com.tf.npu.blocks.npublocknewclasses.HorizontalDirectionalStructure;
 import com.tf.npu.blocks.npublocknewclasses.NormalStructure;
+import com.tf.npu.util.FileDataGetter;
+import com.tf.npu.util.FolderDataGetter;
 import com.tf.npu.util.Reference;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.DirectionalBlock;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -15,6 +18,12 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.function.ToIntFunction;
 
 public class NpuBlocks
@@ -22,76 +31,60 @@ public class NpuBlocks
     // Create a Deferred Register to hold Blocks which will all be registered under the "npu" namespace
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Reference.MODID);
 
-    //新方块ID表
-    //原npu/Blocks/BuildBlocks/Ceiling中的类
-    public static final String GRILLE_CEILING_ID = "grille_ceiling";
-    public static final String GRILLE_CEILING_AUDIO_ID = "grille_ceiling_audio";
-    public static final String GRILLE_CEILING_BIGLIGHT_ID = "grille_ceiling_biglight";
-    public static final String GRILLE_CEILING_CAMERA_ID = "grille_ceiling_camera";
-    public static final String GRILLE_CEILING_SMALLLIGHT_ID = "grille_ceiling_smalllight";
+    public static final String dataPath = "blockstates/data/construction_block";
+    public static final List<DataOfNpuBlocks> dataListForConstructionBlock = new FolderDataGetter<>(dataPath, DataOfNpuBlocks.class).getList();
 
-    //原npu/Blocks/BuildBlocks/Constructions中的类
-    public static final String BPUP_ID = "bpup";
-    public static final String BPDOWN_ID = "bpdown";
+    //新方块表
+    public static final ArrayList<RegistryObject<Block>> ConstructionBlock_List = new ArrayList<>(0);
+    //新方块与ID映射表
+    public static final Map<RegistryObject<Block>, String> ConstructionBlockID_Map = new HashMap<>();
 
-    //新方块注册表
-/*
-    //注册新方块示例
 
-    //注明原路径中的类！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
-    public static final RegistryObject<Block> EXAMPLE_BLOCK =
-            BLOCKS.register("example_block", () ->
-                    new NormalStructure/HorizontalDirectionalStructure(createBlockProperties(NpuBlocks.EnumMaterial.IRON)   //材料设置，自行选择想要的材料即可，材料不够用自己去下面定义
-                            .noOcclusion())                                                                                 //属性设置，自行选择属性设置即可，可以查英语词典
-                            .addSHAPE(0.0D, 0.0D, 0.0D, 1.0D, 0.5D, 1.0D));                                                 //添加体积，可以一直添加来细化模型
- */
+    static
+    {
+        for (DataOfNpuBlocks data : dataListForConstructionBlock)
+        {
+            ShapeData shapeData =
+                    new FileDataGetter<ShapeData>("../src/main/resources/assets/npu/" + data.modelPath, ShapeData.class).getData();
+            Class<?> tClass = StructureType.valueOf(data.StructureType).getStructureType();
 
-    //原npu/Blocks/BuildBlocks/Ceiling中的类
-    public static final RegistryObject<Block> GRILLE_CEILING =
-            BLOCKS.register(GRILLE_CEILING_ID, () ->
-                    new NormalStructure(createBlockProperties(NpuBlocks.EnumMaterial.IRON)
-                            .noOcclusion())
-                            .addSHAPE(0.0D, 0.5D, 0.0D, 1.0D, 0.63D, 1.0D));
-    public static final RegistryObject<Block> GRILLE_CEILING_AUDIO =
-            BLOCKS.register(GRILLE_CEILING_AUDIO_ID, () ->
-                    new NormalStructure(createBlockProperties(NpuBlocks.EnumMaterial.IRON)
-                            .noOcclusion())
-                            .addSHAPE(0.0D, 0.5D, 0.0D, 1.0D, 0.63D, 1.0D));
-    public static final RegistryObject<Block> GRILLE_CEILING_BIGLIGHT =
-            BLOCKS.register(GRILLE_CEILING_BIGLIGHT_ID, () ->
-                    new NormalStructure(createBlockProperties(NpuBlocks.EnumMaterial.IRON)
-                            .noOcclusion())
-                            .addSHAPE(0.0D, 0.5D, 0.0D, 1.0D, 0.75D, 1.0D));
-    public static final RegistryObject<Block> GRILLE_CEILING_CAMERA =
-            BLOCKS.register(GRILLE_CEILING_CAMERA_ID, () ->
-                    new NormalStructure(createBlockProperties(NpuBlocks.EnumMaterial.IRON)
-                            .noOcclusion())
-                            .addSHAPE(0.0D, 0.5D, 0.0D, 1.0D, 0.63D, 1.0D));
-    public static final RegistryObject<Block> GRILLE_CEILING_SMALLLIGHT =
-            BLOCKS.register(GRILLE_CEILING_SMALLLIGHT_ID, () ->
-                    new NormalStructure(createBlockProperties(NpuBlocks.EnumMaterial.IRON)
-                            .noOcclusion())
-                            .addSHAPE(0.0D, 0.5D, 0.0D, 1.0D, 0.63D, 1.0D));
+            RegistryObject<Block> BLOCK;
 
-    //原npu/Blocks/BuildBlocks/Constructions中的类
-    public static final RegistryObject<HorizontalDirectionalBlock> BPUP =
-            BLOCKS.register(BPUP_ID, () ->
-                    new HorizontalDirectionalStructure(createBlockProperties(NpuBlocks.EnumMaterial.IRON)
-                            .noOcclusion())
-                            .addSHAPE(0.44D, 0.0D, 0.0D, 0.56D, 2.0D, 2.0D));
-    public static final RegistryObject<HorizontalDirectionalBlock> BPDOWN =
-            BLOCKS.register(BPDOWN_ID, () ->
-                    new HorizontalDirectionalStructure(createBlockProperties(NpuBlocks.EnumMaterial.IRON)
-                            .noOcclusion())
-                            .addSHAPE(-1.0D, 0.0D, 0.0D, 2.0D, 2.0D, 1.0D)
-                            .addSHAPE(0.44D, 0.0D, 1.0D, 0.56D, 2.0D, 2.0D));
+            BLOCK = switch (StructureType.valueOf(data.StructureType))
+            {
+                case NORMAL_STRUCTURE -> BLOCKS.register(data.ID, () ->
+                        new NormalStructure(data.createBlockProperties()).setSHAPE(shapeData));
+                case HORIZONTAL_DIRECTIONAL_STRUCTURE ->  BLOCKS.register(data.ID, () ->
+                        new HorizontalDirectionalStructure(data.createBlockProperties()).setSHAPE(shapeData));
+            };
 
+            ConstructionBlock_List.add(BLOCK);
+            ConstructionBlockID_Map.put(BLOCK, data.ID);
+        }
+    }
 
 
 
     //其他的一些玩意
 
     //一些常用属性
+    public static enum StructureType
+    {
+        NORMAL_STRUCTURE(NormalStructure.class),
+        HORIZONTAL_DIRECTIONAL_STRUCTURE(HorizontalDirectionalStructure.class);
+
+        private Class<?> tClass;
+
+        StructureType(Class<?> tClass)
+        {
+            this.tClass = tClass;
+        }
+
+        public Class<?> getStructureType()
+        {
+            return tClass;
+        }
+    }
     public static enum EnumMaterial
     {
         //EXAMPLE("example", 硬度, 音效包, (BlockState state) ->{根据不同的blockstate返回不同的亮度值}, 阻力系数，即站在上面的移速),
@@ -159,7 +152,7 @@ public class NpuBlocks
     }
 
     //一些构造方法
-    private static BlockBehaviour.Properties createBlockProperties(EnumMaterial material)
+    public static BlockBehaviour.Properties createBlockProperties(EnumMaterial material)
     {
         return BlockBehaviour.Properties.of()
                 .strength(material.getStrength())
