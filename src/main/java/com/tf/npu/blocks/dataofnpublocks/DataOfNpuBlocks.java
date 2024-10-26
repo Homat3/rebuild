@@ -1,18 +1,7 @@
-package com.tf.npu.blocks.DataOfNpuBlocks;
+package com.tf.npu.blocks.dataofnpublocks;
 
 import com.tf.npu.blocks.NpuBlocks;
-import com.tf.npu.util.FileDataGetter;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.phys.shapes.VoxelShape;
-
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.util.List;
-import java.util.function.Supplier;
-
-import static com.tf.npu.blocks.NpuBlocks.createBlockProperties;
 
 public class DataOfNpuBlocks
 {

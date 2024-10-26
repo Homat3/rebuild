@@ -1,51 +1,97 @@
 package com.tf.npu.items;
 
+import com.tf.npu.blocks.dataofnpublocks.DataOfNpuBlocks;
 import com.tf.npu.blocks.NpuBlocks;
+import com.tf.npu.blocks.npublocknewclasses.HorizontalDirectionalStructure;
+import com.tf.npu.blocks.npublocknewclasses.NormalStructure;
 import com.tf.npu.entities.NpuEntities;
+import com.tf.npu.items.dataofnpuitems.DataOfNpuItems;
+import com.tf.npu.util.FolderDataGetter;
 import com.tf.npu.util.Reference;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class NpuItems
 {
     // Create a Deferred Register to hold items which will all be registered under the "npu" namespace
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Reference.MODID);
+    public static final String dataPath = "itemdata/";
 
 
-    //////////////////////////////////////////////BlockItem/////////////////////////////////////////////////////////
-
-    public static final ArrayList<RegistryObject<BlockItem>> construction_block_item_List = new ArrayList<>(0);
+    //注册BlockItem和Item
     static
     {
-        for (var BLOCK : NpuBlocks.ConstructionBlock_List)
+        for (var tabType : TabType.values())
         {
-            construction_block_item_List.add(
-                    ITEMS.register(NpuBlocks.ConstructionBlockID_Map.get(BLOCK), () -> new BlockItem(BLOCK.get(), new Item.Properties())));
+            tabType.registerItems();
         }
     }
 
-    //////////////////////////////////////////////////Item///////////////////////////////////////////////////////////
+    public static enum TabType
+    {
+        ConstructionBlock(NpuBlocks.TabType.ConstructionBlock,
+                new FolderDataGetter<>(dataPath + "construction_block", DataOfNpuItems.class).getList()),
+        EntityItem(new FolderDataGetter<>(dataPath + "entity_item", DataOfNpuItems.class).getList());
 
-    /*
-    //注册新物品示例
-    public static final RegistryObject<items> EXAMPLE_ITEM =
-            ITEMS.register(EXAMPLE_ITEM_ID, () -> new Item(new Item.Properties()));
-    */
 
-    //新物品ID表
-    public static String GOLDEN_EGG_ID = "golden_egg";
-    public static String GOLDEN_CHICKEN_SPAWN_EGG_ID = "golden_chicken_spawn_egg";
+        //新方块物品表
+        final NpuBlocks.TabType blockItemTabType;
+        public final ArrayList<RegistryObject<BlockItem>> blockItemList;
+        //新纯物品表
+        final List<DataOfNpuItems> itemDataList;
+        public final ArrayList<RegistryObject<Item>> itemList;
 
-    //新物品注册表
 
-    public static final RegistryObject<Item> GOLDEN_EGG_ITEM =                              //尚未加入物品栏
-            ITEMS.register(GOLDEN_EGG_ID, () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> GOLDEN_CHICKEN_SPAWN_EGG_ITEM =                //尚未加入物品栏
-            ITEMS.register(GOLDEN_CHICKEN_SPAWN_EGG_ID, () -> new ForgeSpawnEggItem(NpuEntities.GOLDEN_CHICKEN, 0xFFD700, 0xFF8C00, new Item.Properties()));
+        TabType(NpuBlocks.TabType blockItemTabType, List<DataOfNpuItems> itemDataList)
+        {
+            this.blockItemTabType = blockItemTabType;
+            this.blockItemList = new ArrayList<>(1);
+
+            this.itemDataList = itemDataList;
+            this.itemList = new ArrayList<>(1);
+        }
+        TabType(List<DataOfNpuItems> itemDataList)
+        {
+            this.blockItemTabType = null;
+            this.blockItemList = new ArrayList<>(1);
+
+            this.itemDataList = itemDataList;
+            this.itemList = new ArrayList<>(1);
+        }
+
+
+        public void registerItems()
+        {
+            if (blockItemTabType != null)
+            {
+                for (var BLOCK : blockItemTabType.blockList)
+                {
+                    blockItemList.add(ITEMS.register(blockItemTabType.IDMap.get(BLOCK), () ->
+                            new BlockItem(BLOCK.get(), new Item.Properties())));
+                }
+            }
+            for (DataOfNpuItems data : itemDataList)
+            {
+                RegistryObject<Item> ITEM;
+
+                if (data.isSpawnEgg)
+                    ITEM = ITEMS.register(data.ID, () ->
+                            new ForgeSpawnEggItem(NpuEntities.GOLDEN_CHICKEN,
+                                    data.getBackgroundColor(), data.getHighlightColor(), new Item.Properties()));
+                else
+                    ITEM = ITEMS.register(data.ID, () ->
+                            new Item(new Item.Properties()));
+
+                itemList.add(ITEM);
+            }
+        }
+    }
 }

@@ -9,7 +9,7 @@ Made by Homat3
 ## 重构结构简述
 - npu
     - blocks  
-        - DataOfNpuBlocks                 新方块的属性数据
+        - dataofnpublocks                 新方块的属性数据
         - npublocknewclasses              新方块的模板
         - NpuBlocks.class                 一切新方块将在此自动注册
     - creativemodtab
@@ -22,8 +22,8 @@ Made by Homat3
         - NpuEntities.class               一切新实体应该在此注册
         - NpuEntitySubscriber.class       向事件加入新实体与新渲染方式的链接
     - items
-        - npuentitynewclasses             新物品的母体（照目前看貌似不太需要）
-        - NpuItems.class                  一切模组物品（包括方块物品）将在此自动注册
+        - dataofnpublocks                 新物品的属性数据
+        - NpuItems.class                  一切新物品（包括方块物品）将在此自动注册
     - util                                一些工具，一般不用改它
         - FileDataGetter                  获取文件的json数据
         - FolderDataGetter                获取文件夹的json数据
@@ -39,20 +39,17 @@ Made by Homat3
 注意少修改原模组中的方块ID，因为移植后Minecraft会认不得
 
 1. 根据原模组中方块的信息判断是哪种方块（Normal/HorizontalDirectional后续会加入更多类型的模板）
-2. 将属性写入json文件中并存放到blockstates/data下
-4. 在CreativeModeTab或者NpuCreativeModeTab中注册到物品栏里（可选，因为此时已经可以用指令获得了）
-5. 从原模组资源文件中导入资源，导入前记得搜索一下重构模组这里是不是已经有了，而且需要对导入的json文件中的一些路径进行修改
+2. 将属性写入json文件中并存放到blockstates/data/下，你希望的创造模式物品栏文件夹下
+3. 从原模组资源文件中导入资源，导入前记得搜索一下重构模组这里是不是已经有了，而且需要对导入的json文件中的一些路径进行修改
 
 涉及资源lang，blockstates，models/blocks，models/item，textures/block
 
 NpuBlocks.class里声明了常用材料属性和常用体积模型属性的枚举，有需求可以自己加
 
-### 注册新物品  （即将修改）
-注意涉及到的不同的字段命名EXAMPLE,EXAMPLE_ID
+### 注册新物品
 
-1. 在NpuItems.class中相应位置注册物品（声明物品字段以及对应物品ID字段）
-2. 在CreativeModeTab或者NpuCreativeModeTab中注册到物品栏里（可选，因为此时已经可以用指令获得了）
-3. 从原模组资源文件中导入资源，导入前记得搜索一下重构模组这里是不是已经有了，而且需要对导入的json文件中的一些路径进行修改
+1. 将属性写入json文件中并存放到itemdata/下，你希望的创造模式物品栏文件夹下
+2. 从原模组资源文件中导入资源，导入前记得搜索一下重构模组这里是不是已经有了，而且需要对导入的json文件中的一些路径进行修改
 
 涉及资源lang，models/item，textures/item
 
@@ -75,9 +72,7 @@ NpuBlocks.class里声明了常用材料属性和常用体积模型属性的枚�
 注意涉及到的不同的字段命名EXAMPLE_TAB,EXAMPLE_TAB_ID
 
 1. 在NpuCreativeModeTab中相应位置注册（声明物品栏字段以及对应物品栏ID字段）
-2. 在NpuBlocks中声明相应的Block列表及其初始化（还需在blockstates/data中创建相应目录）
-3. 在NpuBlocks中声明相应的Item列表及其初始化
-4. 将Item列表遍历加入
+2. 在NpuBlocks.TabType中加入相应的枚举（如果里面有东西还需在blockstates/data/和itemdata/中创建相应目录）
 
 ## 后记
 -有新的模板或API的需求或者已有的模板或API有更优化的方案可以告诉我

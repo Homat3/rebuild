@@ -1,5 +1,6 @@
 {
-  "creativemodetab.npu.npu_construction_block_tab": "NPU建筑方块",
+  "creativemodetab.npu.construction_block_tab": "NPU建筑方块",
+  "creativemodetab.npu.entity_item_tab": "NPU实体物品",
 
 
   "block.npu.grille_ceiling": "格栅天花板",

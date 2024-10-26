@@ -22,35 +22,62 @@ public class NpuCreativeModeTabs
 
 
     //新物品栏ID表
-    public static final String NPU_CONSTRUCTION_BLOCK_TAB_ID = "npu_construction_block_tab";
+    //public static final String EXAMPLE_BLOCK_TAB_ID = "example_block_tab";
+    public static final String CONSTRUCTION_BLOCK_TAB_ID = "construction_block_tab";
+    public static final String ENTITY_ITEM_TAB_ID = "entity_item_tab";
+
 
     //注册新物品栏示例
     /*
     public static final RegistryObject<CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register(EXAMPLE_TAB_ID, () -> CreativeModeTab.builder()
             .title(Component.translatable("creativemodetab.npu" + EXAMPLE_TAB_ID))
             .withTabsBefore(CreativeModeTabs.COMBAT)                        //设置物品栏位置
-            .icon(() -> new ItemStack(NpuItems.WHAT_YOU_WANT_ITEM.get()))   //设置物品栏图标为WHAT_YOU_WANT_ITEM的图标
+            .icon(() -> new ItemStack(NpuItems.TabType.EXAMPLE.itemList.get(0).get()))   //设置物品栏图标为WHAT_YOU_WANT_ITEM的图标
             .displayItems(((itemDisplayParameters, output) ->
                 {
-                    Logger.LOGGER.info("Adding NPU items to NpuCreativeModeTab >> {}", EXAMPLE_TAB_ID);
-                    output.accept(NpuItems.WHAT_YOU_WANT_ITEM.get());       //设置物品栏内容为WHAT_YOU_WANT_ITEM
+                    Logger.LOGGER.info("Adding NPU items to NpuCreativeModeTab >> {}", EXAMPLE_BLOCK_TAB_ID);
+
+                    //加物品
+                    for (var BLOCK_ITEM : NpuItems.TabType.ExampleBlock.blockItemList)
+                        output.accept(BLOCK_ITEM.get());
+                    for (var ITEM : NpuItems.TabType.ExampleBlock.itemList)
+                        output.accept(ITEM.get());
                 }))
             .build());
      */
 
-    public static final RegistryObject<CreativeModeTab> NPU_CONSTRUCTION_BLOCK_TAB = CREATIVE_MODE_TABS.register(NPU_CONSTRUCTION_BLOCK_TAB_ID, () -> CreativeModeTab.builder()
-            .title(Component.translatable("creativemodetab.npu." + NPU_CONSTRUCTION_BLOCK_TAB_ID))
+    public static final RegistryObject<CreativeModeTab> NPU_CONSTRUCTION_BLOCK_TAB = CREATIVE_MODE_TABS.register(CONSTRUCTION_BLOCK_TAB_ID, () -> CreativeModeTab.builder()
+            .title(Component.translatable("creativemodetab.npu." + CONSTRUCTION_BLOCK_TAB_ID))
             .withTabsBefore(CreativeModeTabs.COMBAT)
-            //.icon(() -> new ItemStack(NpuItems.GRILLE_CEILING_ITEM.get()))
-            .displayItems(((itemDisplayParameters, output) ->
+            .icon(() -> new ItemStack(NpuItems.TabType.ConstructionBlock.blockItemList.get(0).get()))
+            .displayItems((itemDisplayParameters, output) ->
                 {
-                    Logger.LOGGER.info("Adding NPU items to NpuCreativeModeTab >> {}", NPU_CONSTRUCTION_BLOCK_TAB_ID);
+                    Logger.LOGGER.info("Adding NPU items to NpuCreativeModeTab >> {}", CONSTRUCTION_BLOCK_TAB_ID);
 
-                    for (var ITEM : NpuItems.construction_block_item_List)
+                    //加物品
+                    for (var BLOCK_ITEM : NpuItems.TabType.ConstructionBlock.blockItemList)
+                        output.accept(BLOCK_ITEM.get());
+                    for (var ITEM : NpuItems.TabType.ConstructionBlock.itemList)
                         output.accept(ITEM.get());
                 }
-                ))
+                )
             .build());
 
+    public static final RegistryObject<CreativeModeTab> NPU_ENTITY_ITEM_TAB = CREATIVE_MODE_TABS.register(ENTITY_ITEM_TAB_ID, () -> CreativeModeTab.builder()
+            .title(Component.translatable("creativemodetab.npu." + ENTITY_ITEM_TAB_ID))
+            .withTabsBefore(CreativeModeTabs.COMBAT)
+            .icon(() -> new ItemStack(NpuItems.TabType.EntityItem.itemList.get(0).get()))
+            .displayItems((itemDisplayParameters, output) ->
+                {
+                    Logger.LOGGER.info("Adding NPU items to NpuCreativeModeTab >> {}", ENTITY_ITEM_TAB_ID);
+
+                    //加物品
+                    for (var BLOCK_ITEM : NpuItems.TabType.EntityItem.blockItemList)
+                        output.accept(BLOCK_ITEM.get());
+                    for (var ITEM : NpuItems.TabType.EntityItem.itemList)
+                        output.accept(ITEM.get());
+                }
+                )
+            .build());
 
 }

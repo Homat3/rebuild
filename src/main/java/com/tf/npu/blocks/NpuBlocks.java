@@ -1,14 +1,13 @@
 package com.tf.npu.blocks;
 
-import com.tf.npu.blocks.DataOfNpuBlocks.DataOfNpuBlocks;
-import com.tf.npu.blocks.DataOfNpuBlocks.ShapeData;
+import com.tf.npu.blocks.dataofnpublocks.DataOfNpuBlocks;
+import com.tf.npu.blocks.dataofnpublocks.ShapeData;
 import com.tf.npu.blocks.npublocknewclasses.HorizontalDirectionalStructure;
 import com.tf.npu.blocks.npublocknewclasses.NormalStructure;
 import com.tf.npu.util.FileDataGetter;
 import com.tf.npu.util.FolderDataGetter;
 import com.tf.npu.util.Reference;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
@@ -18,8 +17,6 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -30,44 +27,74 @@ public class NpuBlocks
 {
     // Create a Deferred Register to hold Blocks which will all be registered under the "npu" namespace
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Reference.MODID);
+    public static final String dataPath = "blockstates/data/";
 
-    public static final String dataPath = "blockstates/data/construction_block";
-    public static final List<DataOfNpuBlocks> dataListForConstructionBlock = new FolderDataGetter<>(dataPath, DataOfNpuBlocks.class).getList();
-
-    //新方块表
-    public static final ArrayList<RegistryObject<Block>> ConstructionBlock_List = new ArrayList<>(0);
-    //新方块与ID映射表
-    public static final Map<RegistryObject<Block>, String> ConstructionBlockID_Map = new HashMap<>();
-
-
+    //新方块注册
     static
     {
-        for (DataOfNpuBlocks data : dataListForConstructionBlock)
-        {
-            ShapeData shapeData =
-                    new FileDataGetter<ShapeData>("../src/main/resources/assets/npu/" + data.modelPath, ShapeData.class).getData();
-            Class<?> tClass = StructureType.valueOf(data.StructureType).getStructureType();
+        for (TabType tabType : TabType.values())
+            tabType.registerBlocks();
+    }
 
-            RegistryObject<Block> BLOCK;
+    //其他的一些有用玩意
+    //注册模板
 
-            BLOCK = switch (StructureType.valueOf(data.StructureType))
-            {
-                case NORMAL_STRUCTURE -> BLOCKS.register(data.ID, () ->
-                        new NormalStructure(data.createBlockProperties()).setSHAPE(shapeData));
-                case HORIZONTAL_DIRECTIONAL_STRUCTURE ->  BLOCKS.register(data.ID, () ->
-                        new HorizontalDirectionalStructure(data.createBlockProperties()).setSHAPE(shapeData));
-            };
-
-            ConstructionBlock_List.add(BLOCK);
-            ConstructionBlockID_Map.put(BLOCK, data.ID);
-        }
+    //一个构造方法
+    public static BlockBehaviour.Properties createBlockProperties(EnumMaterial material)
+    {
+        return BlockBehaviour.Properties.of()
+                .strength(material.getStrength())
+                .sound(material.getSound())
+                .lightLevel(material.getLightLevel())
+                .friction(material.getFriction());
     }
 
 
-
-    //其他的一些玩意
-
     //一些常用属性
+    public static enum TabType
+    {
+        ConstructionBlock(
+                new FolderDataGetter<>(dataPath + "construction_block", DataOfNpuBlocks.class).getList());
+
+        //新方块属性表
+        final List<DataOfNpuBlocks> dataList;
+        //新方块表
+        public final ArrayList<RegistryObject<Block>> blockList;
+        //新方块ID映射表
+        public final Map<RegistryObject<Block>, String> IDMap;
+
+
+        TabType(List<DataOfNpuBlocks> dataList)
+        {
+            this.dataList = dataList;
+            this.blockList = new ArrayList<>(0);
+            this.IDMap = new HashMap<>(0);
+        }
+
+
+        public void registerBlocks()
+        {
+            for (DataOfNpuBlocks data : dataList)
+            {
+                ShapeData shapeData =
+                        new FileDataGetter<ShapeData>("../src/main/resources/assets/npu/" + data.modelPath, ShapeData.class).getData();
+                Class<?> tClass = StructureType.valueOf(data.StructureType).getStructureType();
+
+                RegistryObject<Block> BLOCK;
+
+                BLOCK = switch (StructureType.valueOf(data.StructureType))
+                {
+                    case NORMAL_STRUCTURE -> BLOCKS.register(data.ID, () ->
+                            new NormalStructure(data.createBlockProperties()).setSHAPE(shapeData));
+                    case HORIZONTAL_DIRECTIONAL_STRUCTURE ->  BLOCKS.register(data.ID, () ->
+                            new HorizontalDirectionalStructure(data.createBlockProperties()).setSHAPE(shapeData));
+                };
+
+                blockList.add(BLOCK);
+                IDMap.put(BLOCK, data.ID);
+            }
+        }
+    }
     public static enum StructureType
     {
         NORMAL_STRUCTURE(NormalStructure.class),
@@ -149,15 +176,5 @@ public class NpuBlocks
         {
             return shape;
         }
-    }
-
-    //一些构造方法
-    public static BlockBehaviour.Properties createBlockProperties(EnumMaterial material)
-    {
-        return BlockBehaviour.Properties.of()
-                .strength(material.getStrength())
-                .sound(material.getSound())
-                .lightLevel(material.getLightLevel())
-                .friction(material.getFriction());
     }
 }

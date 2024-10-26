@@ -1,6 +1,6 @@
 package com.tf.npu.blocks.npublocknewclasses;
 
-import com.tf.npu.blocks.DataOfNpuBlocks.ShapeData;
+import com.tf.npu.blocks.dataofnpublocks.ShapeData;
 import com.tf.npu.blocks.NpuBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

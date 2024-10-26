@@ -1,4 +1,4 @@
-package com.tf.npu.blocks.DataOfNpuBlocks;
+package com.tf.npu.blocks.dataofnpublocks;
 
 import java.util.ArrayList;
 import java.util.List;

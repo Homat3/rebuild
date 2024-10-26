@@ -74,7 +74,7 @@ java.lang.RuntimeException: null
 		at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?] {}
 		at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
 	Caused by: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
-		at com.tf.npu.blocks.DataOfNpuBlocks.DataOfNpuBlocks.lambda$getFunc$0(DataOfNpuBlocks.java:61) ~[%23196!/:?] {re:classloading}
+		at com.tf.npu.blocks.dataofnpublocks.DataOfNpuBlocks.lambda$getFunc$0(DataOfNpuBlocks.java:61) ~[%23196!/:?] {re:classloading}
 		at net.minecraftforge.registries.DeferredRegister.lambda$addEntries$1(DeferredRegister.java:386) ~[forge-1.20.1-47.3.0_mapped_official_1.20.1.jar%23190%23197!/:?] {re:classloading}
 		at net.minecraftforge.registries.RegisterEvent.register(RegisterEvent.java:59) ~[forge-1.20.1-47.3.0_mapped_official_1.20.1.jar%23190%23197!/:?] {re:classloading,pl:eventbus:A}
 		at net.minecraftforge.registries.DeferredRegister.addEntries(DeferredRegister.java:386) ~[forge-1.20.1-47.3.0_mapped_official_1.20.1.jar%23190%23197!/:?] {re:classloading}
@@ -90,7 +90,7 @@ java.lang.RuntimeException: null
 		at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
 		at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
 		at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
-		at com.tf.npu.blocks.DataOfNpuBlocks.DataOfNpuBlocks.lambda$getFunc$0(DataOfNpuBlocks.java:54) ~[%23196!/:?] {re:classloading}
+		at com.tf.npu.blocks.dataofnpublocks.DataOfNpuBlocks.lambda$getFunc$0(DataOfNpuBlocks.java:54) ~[%23196!/:?] {re:classloading}
 		at net.minecraftforge.registries.DeferredRegister.lambda$addEntries$1(DeferredRegister.java:386) ~[forge-1.20.1-47.3.0_mapped_official_1.20.1.jar%23190%23197!/:?] {re:classloading}
 		at net.minecraftforge.registries.RegisterEvent.register(RegisterEvent.java:59) ~[forge-1.20.1-47.3.0_mapped_official_1.20.1.jar%23190%23197!/:?] {re:classloading,pl:eventbus:A}
 		at net.minecraftforge.registries.DeferredRegister.addEntries(DeferredRegister.java:386) ~[forge-1.20.1-47.3.0_mapped_official_1.20.1.jar%23190%23197!/:?] {re:classloading}
@@ -108,7 +108,7 @@ java.lang.RuntimeException: null
 		at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
 		at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
 		at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
-		at com.tf.npu.blocks.DataOfNpuBlocks.DataOfNpuBlocks.lambda$getFunc$0(DataOfNpuBlocks.java:54) ~[%23196!/:?] {re:classloading}
+		at com.tf.npu.blocks.dataofnpublocks.DataOfNpuBlocks.lambda$getFunc$0(DataOfNpuBlocks.java:54) ~[%23196!/:?] {re:classloading}
 		at net.minecraftforge.registries.DeferredRegister.lambda$addEntries$1(DeferredRegister.java:386) ~[forge-1.20.1-47.3.0_mapped_official_1.20.1.jar%23190%23197!/:?] {re:classloading}
 		at net.minecraftforge.registries.RegisterEvent.register(RegisterEvent.java:59) ~[forge-1.20.1-47.3.0_mapped_official_1.20.1.jar%23190%23197!/:?] {re:classloading,pl:eventbus:A}
 		at net.minecraftforge.registries.DeferredRegister.addEntries(DeferredRegister.java:386) ~[forge-1.20.1-47.3.0_mapped_official_1.20.1.jar%23190%23197!/:?] {re:classloading}
