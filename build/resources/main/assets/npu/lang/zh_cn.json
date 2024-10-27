@@ -11,6 +11,13 @@
 
   "block.npu.bpdown": "阳台隔墙下",
   "block.npu.bpup": "阳台隔墙上",
+  "block.npu.brailing": "阳台栏杆",
+  "block.npu.cch": "青色陶瓦竖半砖",
+  "block.npu.qh": "石英块竖半砖",
+  "block.npu.mesh": "网栅墙",
+  "block.npu.nn": "小石亭",
+  "block.npu.roadblock": "路障",
+  "block.npu.windowframe": "窗框",
 
   "entity.npu.golden_chicken": "金鸡",
 
