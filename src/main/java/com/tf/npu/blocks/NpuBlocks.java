@@ -85,9 +85,9 @@ public class NpuBlocks
                 BLOCK = switch (StructureType.valueOf(data.StructureType))
                 {
                     case NORMAL_STRUCTURE -> BLOCKS.register(data.ID, () ->
-                            new NormalStructure(data.createBlockProperties()).setSHAPE(shapeData));
+                            new NormalStructure(data.createBlockProperties(), LoadMethod.valueOf(data.loadMethod)).setSHAPE(shapeData));
                     case HORIZONTAL_DIRECTIONAL_STRUCTURE ->  BLOCKS.register(data.ID, () ->
-                            new HorizontalDirectionalStructure(data.createBlockProperties()).setSHAPE(shapeData));
+                            new HorizontalDirectionalStructure(data.createBlockProperties(), LoadMethod.valueOf(data.loadMethod)).setSHAPE(shapeData));
                 };
 
                 blockList.add(BLOCK);
@@ -176,5 +176,9 @@ public class NpuBlocks
         {
             return shape;
         }
+    }
+    public static enum LoadMethod
+    {
+        METICULOUS, ROUGH;
     }
 }

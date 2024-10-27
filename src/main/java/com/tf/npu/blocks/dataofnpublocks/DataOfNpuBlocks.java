@@ -8,6 +8,7 @@ public class DataOfNpuBlocks
     public String StructureType;
     public String ID;
     public String modelPath;
+    public String loadMethod;
     public String Material;
     public boolean noOcclusion;
     public boolean noCollision;
