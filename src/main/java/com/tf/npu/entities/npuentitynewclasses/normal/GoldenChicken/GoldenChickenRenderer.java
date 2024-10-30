@@ -1,7 +1,6 @@
-package com.tf.npu.entities.npuentitynewclasses.npuentityrenderers;
+package com.tf.npu.entities.npuentitynewclasses.normal.GoldenChicken;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.tf.npu.entities.npuentitynewclasses.npuentities.GoldenChicken;
 import com.tf.npu.util.Reference;
 import net.minecraft.client.renderer.entity.ChickenRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;

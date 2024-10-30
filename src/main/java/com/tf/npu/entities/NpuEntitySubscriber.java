@@ -1,6 +1,7 @@
 package com.tf.npu.entities;
 
-import com.tf.npu.entities.npuentitynewclasses.npuentities.GoldenChicken;
+import com.tf.npu.entities.npuentitynewclasses.geo.schoolbus.SchoolBus;
+import com.tf.npu.entities.npuentitynewclasses.normal.GoldenChicken.GoldenChicken;
 import com.tf.npu.util.Reference;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -18,5 +19,6 @@ public class NpuEntitySubscriber
     {
         //event.put(NpuEntities.EXAMPLE.get(), EXAMPLE.registerAttributes().build());
         event.put(NpuEntities.GOLDEN_CHICKEN.get(), GoldenChicken.registerAttributes().build());
+        event.put(NpuEntities.SCHOOL_BUS.get(), SchoolBus.registerAttributes().build());
     }
 }

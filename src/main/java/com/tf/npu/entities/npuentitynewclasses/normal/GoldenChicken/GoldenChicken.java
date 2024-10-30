@@ -1,11 +1,9 @@
-package com.tf.npu.entities.npuentitynewclasses.npuentities;
+package com.tf.npu.entities.npuentitynewclasses.normal.GoldenChicken;
 
-import com.tf.npu.items.NpuItems;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.animal.Chicken;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
 public class GoldenChicken extends Chicken

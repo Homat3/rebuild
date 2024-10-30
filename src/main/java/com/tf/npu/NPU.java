@@ -2,12 +2,12 @@ package com.tf.npu;
 
 import com.tf.npu.creativemodtab.CreativeModeTab;
 import com.tf.npu.entities.NpuEntities;
-import com.tf.npu.entities.npuentitynewclasses.npuentityrenderers.GoldenChickenRenderer;
+import com.tf.npu.entities.npuentitynewclasses.normal.GoldenChicken.GoldenChickenRenderer;
+import com.tf.npu.entities.npuentitynewclasses.geo.schoolbus.SchoolBusRenderer;
 import com.tf.npu.util.Logger;
 import com.tf.npu.util.Reference;
 import com.tf.npu.util.Register;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
@@ -90,6 +90,7 @@ public class NPU
     private void registerRenderers(EntityRenderersEvent.RegisterRenderers register)
     {
         register.registerEntityRenderer(NpuEntities.GOLDEN_CHICKEN.get(), GoldenChickenRenderer::new);
+        register.registerEntityRenderer(NpuEntities.SCHOOL_BUS.get(), SchoolBusRenderer::new);
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
