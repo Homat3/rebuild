@@ -10,9 +10,7 @@ import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.entity.animal.Chicken;
-import net.minecraft.world.entity.monster.Zombie;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.vehicle.Boat;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
@@ -24,18 +22,21 @@ import software.bernie.geckolib.core.animation.AnimationState;
 import software.bernie.geckolib.core.object.PlayState;
 import software.bernie.geckolib.util.GeckoLibUtil;
 import javax.annotation.Nullable;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class SchoolBus extends Animal implements GeoEntity
 {
-    private static final int maxPassengers = 8;
+    private static final int maxPassenger = 15;
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 
     public SchoolBus(EntityType<? extends Animal> entityType, Level level)
     {
         super(entityType, level);
     }
-    public static AttributeSupplier.Builder registerAttributes()
+    
+    public static AttributeSupplier.@NotNull Builder registerAttributes()
     {
         return Chicken.createAttributes()
                 .add(Attributes.MAX_HEALTH, 25.0F)
@@ -46,22 +47,15 @@ public class SchoolBus extends Animal implements GeoEntity
     @Override
     public boolean isPushable()
     {
-        return false;
+        return true;
     }
 
     @Override
-    public @NotNull InteractionResult mobInteract(@NotNull Player player, @NotNull InteractionHand hand) {
-        if (!this.isVehicle())
+    public @NotNull InteractionResult mobInteract(@NotNull Player player, @NotNull InteractionHand hand)
+    {
+        if (this.canAddPassenger(player))
         {
             player.startRiding(this);
-
-            Zombie $$3 = EntityType.ZOMBIE.create(this.level());
-            if ($$3 != null)
-            {
-                $$3.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-                this.level().addFreshEntity($$3);
-                $$3.startRiding(this);
-            }
         }
         return super.mobInteract(player, hand);
     }
@@ -120,10 +114,14 @@ public class SchoolBus extends Animal implements GeoEntity
     }
 
     @Override
-    protected void addPassenger(@NotNull Entity entity)
+    protected boolean canAddPassenger(@NotNull Entity entity)
     {
-        if (getPassengers().size() < maxPassengers)
-            super.addPassenger(entity);
+        return getPassengers().size() < getMaxPassengers();
+    }
+
+    protected int getMaxPassengers()
+    {
+        return maxPassenger;
     }
 
     @Override
@@ -131,12 +129,12 @@ public class SchoolBus extends Animal implements GeoEntity
     {
         if (entity instanceof LivingEntity passenger)
         {
-            passenger.xRotO = this.xRotO;
-            List<Double> xz = getPosition(getPassengers().size() % 2 == 0 ? -1 : 1, 5 - (int)(getPassengers().size() / 2));
+            List<Double> xz = getPosition(getPassengers().indexOf(passenger) % 2 == 0 ? 1 : -1, 5.2 - (int)((getPassengers().indexOf(passenger) + 1) / 2) * 23.5 / 16.0);
             moveFunction.accept(entity, xz.get(0), this.getY() + 1.2, xz.get(1));
         }
 
     }
+
     @Override
     public @NotNull Vec3 getDismountLocationForPassenger(@NotNull LivingEntity passenger)
     {
