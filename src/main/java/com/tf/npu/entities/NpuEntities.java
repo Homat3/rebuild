@@ -5,15 +5,21 @@ import com.tf.npu.entities.npuentitynewclasses.geo.schoolbus.SchoolBus;
 import com.tf.npu.util.Reference;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.function.Supplier;
+
 public class NpuEntities
 {
     // Create a Deferred Register to hold items which will all be registered under the "npu" namespace
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, Reference.MODID);
+    public static final Map<String, Supplier<? extends EntityType<? extends Mob>>> ID_MAP = new HashMap<>(0);
 
     //新实体ID表
     public static final String GOLDEN_CHICKEN_ID = "golden_chicken";
@@ -37,4 +43,10 @@ public class NpuEntities
                     EntityType.Builder.of(SchoolBus::new, MobCategory.CREATURE)
                             .sized(2.0F, 2.0F)
                             .build(new ResourceLocation(Reference.MODID, SCHOOL_BUS_ID).toString()));
+
+    static
+    {
+        ID_MAP.put(GOLDEN_CHICKEN_ID, GOLDEN_CHICKEN);
+        ID_MAP.put(SCHOOL_BUS_ID, SCHOOL_BUS);
+    }
 }

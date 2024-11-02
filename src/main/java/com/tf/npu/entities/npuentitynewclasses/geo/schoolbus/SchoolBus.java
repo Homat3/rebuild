@@ -22,9 +22,7 @@ import software.bernie.geckolib.core.animation.AnimationState;
 import software.bernie.geckolib.core.object.PlayState;
 import software.bernie.geckolib.util.GeckoLibUtil;
 import javax.annotation.Nullable;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class SchoolBus extends Animal implements GeoEntity
 {
@@ -35,7 +33,7 @@ public class SchoolBus extends Animal implements GeoEntity
     {
         super(entityType, level);
     }
-    
+
     public static AttributeSupplier.@NotNull Builder registerAttributes()
     {
         return Chicken.createAttributes()

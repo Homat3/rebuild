@@ -84,7 +84,7 @@ public class NpuItems
 
                 if (data.isSpawnEgg)
                     ITEM = ITEMS.register(data.ID, () ->
-                            new ForgeSpawnEggItem(NpuEntities.GOLDEN_CHICKEN,
+                            new ForgeSpawnEggItem(NpuEntities.ID_MAP.get(data.creature_ID),
                                     data.getBackgroundColor(), data.getHighlightColor(), new Item.Properties()));
                 else
                     ITEM = ITEMS.register(data.ID, () ->

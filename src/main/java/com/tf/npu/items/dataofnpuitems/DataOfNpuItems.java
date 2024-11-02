@@ -4,6 +4,7 @@ public class DataOfNpuItems
 {
   public boolean isSpawnEgg;
   public String ID;
+  public String creature_ID;
 
   public String backgroundColor;
   public String highlightColor;
@@ -26,7 +27,7 @@ public class DataOfNpuItems
 
   private enum Color
   {
-      ORANGE(0xFFA500), YELLOW(0xFFFF00), GREEN(0x00FF00), PURPLE(0xA020F0);
+      BLUE(0x0000FF), ORANGE(0xFFA500), YELLOW(0xFFFF00), GREEN(0x00FF00), PURPLE(0xA020F0), GREY(0xBEBEBE);
 
       final Integer color;
 
