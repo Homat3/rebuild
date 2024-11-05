@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "npu:block/cube/blue_brick_half"
+    }
+  }
+}
