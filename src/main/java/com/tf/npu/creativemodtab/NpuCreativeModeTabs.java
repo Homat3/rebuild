@@ -1,6 +1,5 @@
 package com.tf.npu.creativemodtab;
 
-import com.tf.npu.util.Logger;
 import com.tf.npu.util.Reference;
 import com.tf.npu.items.NpuItems;
 import net.minecraft.core.registries.Registries;
@@ -52,8 +51,6 @@ public class NpuCreativeModeTabs
             .icon(() -> new ItemStack(NpuItems.TabType.ConstructionBlock.blockItemList.get(0).get()))
             .displayItems((itemDisplayParameters, output) ->
                 {
-                    Logger.LOGGER.info("Adding NPU items to NpuCreativeModeTab >> {}", CONSTRUCTION_BLOCK_TAB_ID);
-
                     //加物品
                     for (var BLOCK_ITEM : NpuItems.TabType.ConstructionBlock.blockItemList)
                         output.accept(BLOCK_ITEM.get());
@@ -69,8 +66,6 @@ public class NpuCreativeModeTabs
             .icon(() -> new ItemStack(NpuItems.TabType.EntityItem.itemList.get(0).get()))
             .displayItems((itemDisplayParameters, output) ->
                 {
-                    Logger.LOGGER.info("Adding NPU items to NpuCreativeModeTab >> {}", ENTITY_ITEM_TAB_ID);
-
                     //加物品
                     for (var BLOCK_ITEM : NpuItems.TabType.EntityItem.blockItemList)
                         output.accept(BLOCK_ITEM.get());

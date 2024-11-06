@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "npu:block/cube/playground_grass_dry"
+      "model": "npu:block/playground/playground_grass_dry"
     }
   }
 }

@@ -78,7 +78,6 @@ public class NpuBlocks
             {
                 ShapeData shapeData =
                         new FileDataGetter<ShapeData>("../src/main/resources/assets/npu/" + data.modelPath, ShapeData.class).getData();
-                Class<?> tClass = StructureType.valueOf(data.StructureType).getStructureType();
 
                 RegistryObject<Block> BLOCK;
 
@@ -97,20 +96,8 @@ public class NpuBlocks
     }
     public static enum StructureType
     {
-        NORMAL_STRUCTURE(NormalStructure.class),
-        HORIZONTAL_DIRECTIONAL_STRUCTURE(HorizontalDirectionalStructure.class);
-
-        private Class<?> tClass;
-
-        StructureType(Class<?> tClass)
-        {
-            this.tClass = tClass;
-        }
-
-        public Class<?> getStructureType()
-        {
-            return tClass;
-        }
+        NORMAL_STRUCTURE,
+        HORIZONTAL_DIRECTIONAL_STRUCTURE;
     }
     public static enum EnumMaterial
     {

@@ -2,6 +2,22 @@
   "creativemodetab.npu.construction_block_tab": "NPU建筑方块",
   "creativemodetab.npu.entity_item_tab": "NPU实体物品",
 
+  "block.npu.balcony_partition_down": "阳台隔墙下",
+  "block.npu.balcony_partition_up": "阳台隔墙上",
+  "block.npu.brailing": "阳台栏杆",
+
+  "block.npu.blue_brick": "蓝砖道路",
+  "block.npu.blue_brick_half": "半蓝砖道路",
+
+  "block.npu.cement_lightblue": "浅蓝水泥",
+  "block.npu.cement_half_lightblue": "半浅蓝水泥",
+
+  "block.npu.cement_road_with_curb": "水泥路面+路缘石",
+  "block.npu.cement_road_with_curb_black": "水泥路面+路缘石(黑)",
+  "block.npu.cement_road_with_curb_grey": "水泥路面+路缘石(灰)",
+
+  "block.npu.cyan_terracotta_slab_v": "青色陶瓦竖半砖",
+  "block.npu.quartz_block_slab_v": "石英块竖半砖",
 
   "block.npu.grille_ceiling": "格栅天花板",
   "block.npu.grille_ceiling_audio": "格栅天花板-音响",
@@ -9,17 +25,19 @@
   "block.npu.grille_ceiling_camera": "格栅天花板-摄像头",
   "block.npu.grille_ceiling_smalllight": "格栅天花板-小灯",
 
-  "block.npu.bpdown": "阳台隔墙下",
-  "block.npu.bpup": "阳台隔墙上",
-  "block.npu.brailing": "阳台栏杆",
-  "block.npu.cch": "青色陶瓦竖半砖",
-  "block.npu.qh": "石英块竖半砖",
   "block.npu.mesh": "网栅墙",
-  "block.npu.nn": "小石亭",
+
+  "block.npu.playground_grass_dry": "操场-干草地",
+  "block.npu.playground_plastic_green": "操场-绿色塑胶块",
+
   "block.npu.roadblock": "路障",
+  "block.npu.small_stone_pavilion": "小石亭",
+  "block.npu.wall_stem_quarter": "图书馆圆形柱子",
   "block.npu.windowframe": "窗框",
 
+
   "entity.npu.golden_chicken": "金鸡",
+  "entity.npu.school_bus": "西工大校车",
 
   "item.npu.golden_egg": "金鸡蛋",
   "item.npu.golden_chicken_spawn_egg": "生成金鸡"

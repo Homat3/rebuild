@@ -1,0 +1,9 @@
+bpdown -> balcony_partition_down
+bpup -> balcony_partition_up
+g22 -> cement_road_with_curb
+g23 -> cement_road_with_curb_black
+cement_road_side3 -> cement_road_with_curb_grey
+cch -> cyan_terracotta_slab_v
+playground_green2 -> playground_plastic_green
+qh -> quartz_block_slab_v
+nn -> small_stone_pavilion
