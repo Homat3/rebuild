@@ -53,8 +53,14 @@ public class NpuBlocks
     //一些常用属性
     public static enum TabType
     {
+        AreaBlock(
+                new FolderDataGetter<>(dataPath + "area_block", DataOfNpuBlocks.class).getList()),
         ConstructionBlock(
-                new FolderDataGetter<>(dataPath + "construction_block", DataOfNpuBlocks.class).getList());
+                new FolderDataGetter<>(dataPath + "construction_block", DataOfNpuBlocks.class).getList()),
+        RoadBlock(
+                new FolderDataGetter<>(dataPath + "road_block", DataOfNpuBlocks.class).getList()),
+        PlaygroundBlock(
+                new FolderDataGetter<>(dataPath + "playground_block", DataOfNpuBlocks.class).getList());
 
         //新方块属性表
         final List<DataOfNpuBlocks> dataList;

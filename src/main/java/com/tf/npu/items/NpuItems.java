@@ -37,8 +37,14 @@ public class NpuItems
 
     public static enum TabType
     {
+        AreaBlock(NpuBlocks.TabType.AreaBlock,
+                new FolderDataGetter<>(dataPath + "area_block", DataOfNpuItems.class).getList()),
         ConstructionBlock(NpuBlocks.TabType.ConstructionBlock,
                 new FolderDataGetter<>(dataPath + "construction_block", DataOfNpuItems.class).getList()),
+        RoadBlock(NpuBlocks.TabType.RoadBlock,
+                new FolderDataGetter<>(dataPath + "road_block", DataOfNpuItems.class).getList()),
+        PlaygroundBlock(NpuBlocks.TabType.PlaygroundBlock,
+                new FolderDataGetter<>(dataPath + "playground_block", DataOfNpuItems.class).getList()),
         EntityItem(new FolderDataGetter<>(dataPath + "entity_item", DataOfNpuItems.class).getList());
 
 
