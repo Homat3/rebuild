@@ -7,3 +7,6 @@ cch -> cyan_terracotta_slab_v
 playground_green2 -> playground_plastic_green
 qh -> quartz_block_slab_v
 nn -> small_stone_pavilion
+cemt -> cement_road_total
+cemh -> cement_road_half
+cementslab -> cement_block_slab

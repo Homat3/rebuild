@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "npu:block/cement_road/cement_road_total"
+    }
+  }
+}
