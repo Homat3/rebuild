@@ -1,16 +1,12 @@
 package com.tf.npu.items;
 
-import com.tf.npu.blocks.dataofnpublocks.DataOfNpuBlocks;
 import com.tf.npu.blocks.NpuBlocks;
-import com.tf.npu.blocks.npublocknewclasses.HorizontalDirectionalStructure;
-import com.tf.npu.blocks.npublocknewclasses.NormalStructure;
 import com.tf.npu.entities.NpuEntities;
 import com.tf.npu.items.dataofnpuitems.DataOfNpuItems;
 import com.tf.npu.util.FolderDataGetter;
 import com.tf.npu.util.Reference;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -35,7 +31,7 @@ public class NpuItems
         }
     }
 
-    public static enum TabType
+    public enum TabType
     {
         AreaBlock(NpuBlocks.TabType.AreaBlock,
                 new FolderDataGetter<>(dataPath + "area_block", DataOfNpuItems.class).getList()),

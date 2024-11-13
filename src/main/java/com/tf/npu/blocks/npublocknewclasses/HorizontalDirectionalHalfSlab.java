@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.properties.SlabType;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
+import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
 import java.util.Objects;
@@ -34,7 +35,7 @@ public class HorizontalDirectionalHalfSlab extends SlabBlock
     }
 
     @Override
-    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder)
+    protected void createBlockStateDefinition(StateDefinition.@NotNull Builder<Block, BlockState> builder)
     {
         super.createBlockStateDefinition(builder);
         builder.add(FACING);
@@ -47,22 +48,22 @@ public class HorizontalDirectionalHalfSlab extends SlabBlock
         BlockState state = context.getLevel().getBlockState(pos);
         FluidState fluidState = context.getLevel().getFluidState(pos);
         if (state.is(this)) {
-            return (BlockState)((BlockState)state
-                    .setValue(TYPE, canBeDouble ? SlabType.DOUBLE : Objects.requireNonNull(getOppositeSlabType(state.getValue(TYPE)))))
+            return state
+                    .setValue(TYPE, canBeDouble ? SlabType.DOUBLE : Objects.requireNonNull(getOppositeSlabType(state.getValue(TYPE))))
                     .setValue(WATERLOGGED, !canBeDouble && fluidState.getType() == Fluids.WATER)
                     .setValue(FACING, context.getHorizontalDirection().getOpposite());
         } else {
-            BlockState blockState = (BlockState)((BlockState)this.defaultBlockState()
-                    .setValue(TYPE, SlabType.BOTTOM))
+            BlockState blockState = this.defaultBlockState()
+                    .setValue(TYPE, SlabType.BOTTOM)
                     .setValue(WATERLOGGED, fluidState.getType() == Fluids.WATER);
             Direction direction = context.getClickedFace();
-            return ((direction != Direction.DOWN) && (direction == Direction.UP || !(context.getClickLocation().y - (double)pos.getY() > 0.5)) ? blockState : (BlockState)blockState
+            return ((direction != Direction.DOWN) && (direction == Direction.UP || !(context.getClickLocation().y - (double)pos.getY() > 0.5)) ? blockState : blockState
                     .setValue(TYPE, SlabType.TOP))
                     .setValue(FACING, context.getHorizontalDirection().getOpposite());
         }
     }
 
-    private final SlabType getOppositeSlabType(SlabType current)
+    private SlabType getOppositeSlabType(SlabType current)
     {
         return switch (current)
         {

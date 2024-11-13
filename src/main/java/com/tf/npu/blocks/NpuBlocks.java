@@ -2,10 +2,7 @@ package com.tf.npu.blocks;
 
 import com.tf.npu.blocks.dataofnpublocks.DataOfNpuBlocks;
 import com.tf.npu.blocks.dataofnpublocks.ShapeData;
-import com.tf.npu.blocks.npublocknewclasses.HorizontalDirectionalHalfSlab;
-import com.tf.npu.blocks.npublocknewclasses.HorizontalDirectionalStructure;
-import com.tf.npu.blocks.npublocknewclasses.NormalHalfSlab;
-import com.tf.npu.blocks.npublocknewclasses.NormalStructure;
+import com.tf.npu.blocks.npublocknewclasses.*;
 import com.tf.npu.util.FileDataGetter;
 import com.tf.npu.util.FolderDataGetter;
 import com.tf.npu.util.Reference;
@@ -53,7 +50,7 @@ public class NpuBlocks
 
 
     //一些常用属性
-    public static enum TabType
+    public enum TabType
     {
         AreaBlock(
                 new FolderDataGetter<>(dataPath + "area_block", DataOfNpuBlocks.class).getList()),
@@ -91,14 +88,14 @@ public class NpuBlocks
                     case NORMAL_STRUCTURE ->
                     {
                         ShapeData shapeData =
-                                new FileDataGetter<ShapeData>("../src/main/resources/assets/npu/" + data.modelPath, ShapeData.class).getData();
+                                new FileDataGetter<>("../src/main/resources/assets/npu/" + data.modelPath, ShapeData.class).getData();
                         yield BLOCKS.register(data.ID, () ->
                                 new NormalStructure(data.createBlockProperties(), LoadMethod.valueOf(data.loadMethod)).setSHAPE(shapeData));
                     }
                     case HORIZONTAL_DIRECTIONAL_STRUCTURE ->
                     {
                         ShapeData shapeData =
-                                new FileDataGetter<ShapeData>("../src/main/resources/assets/npu/" + data.modelPath, ShapeData.class).getData();
+                                new FileDataGetter<>("../src/main/resources/assets/npu/" + data.modelPath, ShapeData.class).getData();
                         yield BLOCKS.register(data.ID, () ->
                                 new HorizontalDirectionalStructure(data.createBlockProperties(), LoadMethod.valueOf(data.loadMethod)).setSHAPE(shapeData));
                     }
@@ -106,6 +103,15 @@ public class NpuBlocks
                             new HorizontalDirectionalHalfSlab(data.createBlockProperties()).setCanBeDouble(data.double_enable));
                     case NORMAL_HALF_SLAB -> BLOCKS.register(data.ID, () ->
                             new NormalHalfSlab(data.createBlockProperties()).setCanBeDouble(data.double_enable));
+                    case DOOR_AND_WINDOW ->
+                    {
+                        ShapeData shapeData1 =
+                                new FileDataGetter<>("../src/main/resources/assets/npu/" + data.open_modelPath, ShapeData.class).getData();
+                        ShapeData shapeData2 =
+                                new FileDataGetter<>("../src/main/resources/assets/npu/" + data.close_modelPath, ShapeData.class).getData();
+                        yield BLOCKS.register(data.ID, () ->
+                                new DoorAndWindow(data.createBlockProperties(), LoadMethod.valueOf(data.loadMethod)).setSHAPE(shapeData1, shapeData2));
+                    }
                 };
 
                 blockList.add(BLOCK);
@@ -113,18 +119,19 @@ public class NpuBlocks
             }
         }
     }
-    public static enum StructureType
+    public enum StructureType
     {
         NORMAL_STRUCTURE,
         HORIZONTAL_DIRECTIONAL_STRUCTURE,
         NORMAL_HALF_SLAB,
-        HORIZONTAL_DIRECTIONAL_HALF_SLAB;
+        HORIZONTAL_DIRECTIONAL_HALF_SLAB,
+        DOOR_AND_WINDOW
     }
-    public static enum EnumMaterial
+    public enum EnumMaterial
     {
         //EXAMPLE("example", 硬度, 音效包, (BlockState state) ->{根据不同的blockstate返回不同的亮度值}, 阻力系数，即站在上面的移速),
-        IRON("iron", 5.0F, SoundType.METAL, (BlockState state) ->{return 0;},0.6F),
-        ROCK("rock", 2.5F, SoundType.STONE, (BlockState state) ->{return 0;},0.6F);
+        IRON("iron", 5.0F, SoundType.METAL, (BlockState state) -> 0,0.6F),
+        ROCK("rock", 2.5F, SoundType.STONE, (BlockState state) -> 0,0.6F);
 
 
         private final String name;
@@ -166,7 +173,7 @@ public class NpuBlocks
             return friction;
         }
     }
-    public static enum EmunShape
+    public enum EmunShape
     {
         FULL_SHPAE(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D),
         NULL_SHPAE(0.0D, 0.0D, 0.0D, 0.0D, 0.0D, 0.0D),
@@ -185,8 +192,8 @@ public class NpuBlocks
             return shape;
         }
     }
-    public static enum LoadMethod
+    public enum LoadMethod
     {
-        METICULOUS, ROUGH;
+        METICULOUS, ROUGH
     }
 }

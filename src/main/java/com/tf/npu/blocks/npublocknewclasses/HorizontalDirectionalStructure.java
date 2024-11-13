@@ -24,11 +24,11 @@ import java.util.List;
 public class HorizontalDirectionalStructure extends HorizontalDirectionalBlock
 {
     //体积映射
-    public ArrayList<VoxelShape> shapeList;
-    public VoxelShape shape;
+    private final ArrayList<VoxelShape> shapeList;
+    protected VoxelShape shape;
     //方向属性
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
-    private Direction direction;
+    protected Direction direction;
     //加载方式
     public NpuBlocks.LoadMethod loadMethod;
 

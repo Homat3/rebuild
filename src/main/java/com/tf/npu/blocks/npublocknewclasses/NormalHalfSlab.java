@@ -3,12 +3,8 @@ package com.tf.npu.blocks.npublocknewclasses;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.properties.SlabType;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
@@ -39,20 +35,20 @@ public class NormalHalfSlab extends SlabBlock
         BlockState state = context.getLevel().getBlockState(pos);
         FluidState fluidState = context.getLevel().getFluidState(pos);
         if (state.is(this)) {
-            return (BlockState)((BlockState)state
-                    .setValue(TYPE, canBeDouble ? SlabType.DOUBLE : Objects.requireNonNull(getOppositeSlabType(state.getValue(TYPE)))))
+            return state
+                    .setValue(TYPE, canBeDouble ? SlabType.DOUBLE : Objects.requireNonNull(getOppositeSlabType(state.getValue(TYPE))))
                     .setValue(WATERLOGGED, !canBeDouble && fluidState.getType() == Fluids.WATER);
         } else {
-            BlockState blockState = (BlockState)((BlockState)this.defaultBlockState()
-                    .setValue(TYPE, SlabType.BOTTOM))
+            BlockState blockState = this.defaultBlockState()
+                    .setValue(TYPE, SlabType.BOTTOM)
                     .setValue(WATERLOGGED, fluidState.getType() == Fluids.WATER);
             Direction direction = context.getClickedFace();
-            return ((direction != Direction.DOWN) && (direction == Direction.UP || !(context.getClickLocation().y - (double)pos.getY() > 0.5)) ? blockState : (BlockState)blockState
+            return ((direction != Direction.DOWN) && (direction == Direction.UP || !(context.getClickLocation().y - (double)pos.getY() > 0.5)) ? blockState : blockState
                     .setValue(TYPE, SlabType.TOP));
         }
     }
 
-    private final SlabType getOppositeSlabType(SlabType current)
+    private SlabType getOppositeSlabType(SlabType current)
     {
         return switch (current)
         {

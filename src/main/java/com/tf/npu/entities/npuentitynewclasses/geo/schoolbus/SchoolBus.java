@@ -85,7 +85,7 @@ public class SchoolBus extends Animal implements GeoEntity
                 }
 
                 this.setSpeed(0.3F);
-                super.travel(new Vec3(0, pos.y, (double) z));
+                super.travel(new Vec3(0, pos.y, z));
             }
         }
 
@@ -127,7 +127,7 @@ public class SchoolBus extends Animal implements GeoEntity
     {
         if (entity instanceof LivingEntity passenger)
         {
-            List<Double> xz = getPosition(getPassengers().indexOf(passenger) % 2 == 0 ? 1 : -1, 5.2 - (int)((getPassengers().indexOf(passenger) + 1) / 2) * 23.5 / 16.0);
+            List<Double> xz = getPosition(getPassengers().indexOf(passenger) % 2 == 0 ? 1 : -1, 5.2 - ((getPassengers().indexOf(passenger) + 1) / 2) * 23.5 / 16.0);
             moveFunction.accept(entity, xz.get(0), this.getY() + 1.2, xz.get(1));
         }
 

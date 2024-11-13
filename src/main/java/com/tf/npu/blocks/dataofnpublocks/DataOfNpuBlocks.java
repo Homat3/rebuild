@@ -14,6 +14,11 @@ public class DataOfNpuBlocks
     //HalfSlab
     public boolean double_enable;
     //HalfSlab
+    //DoorAndWindow
+    public String open_modelPath;
+    public String close_modelPath;
+    //loadMethod
+    //DoorAndWindow
     public String Material;
     public boolean noOcclusion;
     public boolean noCollision;

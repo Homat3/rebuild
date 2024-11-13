@@ -1,8 +1,8 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "1": "npu:block/npunew/structure/wall/red_marble_wall",
-    "particle": "npu:block/npunew/structure/wall/red_marble_wall"
+    "1": "npu:block/npunew/marble/red_marble",
+    "particle": "npu:block/npunew/marble/red_marble"
   },
   "elements": [
     {

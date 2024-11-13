@@ -1,7 +1,7 @@
 package com.tf.npu.blocks.npublocknewclasses;
 
-import com.tf.npu.blocks.dataofnpublocks.ShapeData;
 import com.tf.npu.blocks.NpuBlocks;
+import com.tf.npu.blocks.dataofnpublocks.ShapeData;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
@@ -14,9 +14,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class NormalStructure extends Block
 {
