@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "npu:block/cube/blue_brick"
+      "model": "npu:block/brick/blue_brick"
     }
   }
 }

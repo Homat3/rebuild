@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "npu:block/cube/cement_lightblue"
+      "model": "npu:block/structure/cement_lightblue"
     }
   }
 }

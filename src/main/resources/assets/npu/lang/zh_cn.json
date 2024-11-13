@@ -75,6 +75,22 @@
   "block.npu.floor3": "3楼标识牌",
   "block.npu.floor2": "2楼标识牌",
 
+  "block.npu.grey_brick_wall": "青砖墙",
+  "block.npu.grey_brick_wall_slab_v": "青砖墙-竖半砖",
+  "block.npu.cement_brick_wall": "水泥砖墙",
+  "block.npu.cement_brick_wall_dark": "水泥砖墙-深",
+  "block.npu.cement_brick_wall_slab_v": "水泥砖墙-竖半砖",
+  "block.npu.white_porcelain_wall": "白瓷砖墙",
+  "block.npu.red_marble_wall": "红色大理石墙",
+  "block.npu.portable_dwellings_wall": "临时板房墙",
+  "block.npu.portable_dwellings_roof_white": "临时板房-屋顶-白",
+  "block.npu.portable_dwellings_roof_blue": "临时板房-屋顶-蓝",
+  "block.npu.slate_floor_tile_dark": "石板地砖-深",
+  "block.npu.cement_brick_slab_v": "水泥竖半砖",
+  "block.npu.drain_brick": "下水道砖",
+  "block.npu.cross_grain_floor_tile": "斜纹地砖",
+  "block.npu.ventilation": "通风管道口",
+
   "entity.npu.golden_chicken": "金鸡",
   "entity.npu.school_bus": "西工大校车",
 
