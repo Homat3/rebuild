@@ -25,3 +25,8 @@ wall12 -> cement_brick_slab_v
 wall13 -> drain_brick
 wall14 -> cross_grain_floor_tile
 wall15 -> ventilation
+wgwall -> limed_wall
+wgwall1 -> limed_wall_dado
+wgwall2 -> grille_ceiling_floor_tile
+wgwall3 -> double_material_wall
+wgwall3 -> double_material_wall_dado

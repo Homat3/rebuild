@@ -29,6 +29,7 @@
   "block.npu.grille_ceiling_biglight": "格栅天花板-大灯",
   "block.npu.grille_ceiling_camera": "格栅天花板-摄像头",
   "block.npu.grille_ceiling_smalllight": "格栅天花板-小灯",
+  "block.npu.window_ceiling": "玻璃天花板",
 
   "block.npu.mesh": "网栅墙",
 
@@ -91,9 +92,20 @@
   "block.npu.cross_grain_floor_tile": "斜纹地砖",
   "block.npu.ventilation": "通风管道口",
 
+  "block.npu.limed_wall": "白灰墙",
+  "block.npu.limed_wall_dado": "带裙白灰墙",
+  "block.npu.grille_ceiling_floor_tile": "天花板地砖",
+  "block.npu.double_material_wall": "内外双材墙",
+  "block.npu.double_material_wall_dado": "带裙内外双材墙",
+  "block.npu.glass_wall_half": "图书馆窗台A0.5",
+  "block.npu.glass_wall_quarter": "图书馆窗台A0.25",
+  "block.npu.glass_frame1": "玻璃块用窗框",
+  "block.npu.glass_frame2": "玻璃片用窗框",
+
   "entity.npu.golden_chicken": "金鸡",
   "entity.npu.school_bus": "西工大校车",
 
   "item.npu.golden_egg": "金鸡蛋",
   "item.npu.golden_chicken_spawn_egg": "生成金鸡"
+
 }

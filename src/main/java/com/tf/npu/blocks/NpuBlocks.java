@@ -2,7 +2,9 @@ package com.tf.npu.blocks;
 
 import com.tf.npu.blocks.dataofnpublocks.DataOfNpuBlocks;
 import com.tf.npu.blocks.dataofnpublocks.ShapeData;
+import com.tf.npu.blocks.npublocknewclasses.HorizontalDirectionalHalfSlab;
 import com.tf.npu.blocks.npublocknewclasses.HorizontalDirectionalStructure;
+import com.tf.npu.blocks.npublocknewclasses.NormalHalfSlab;
 import com.tf.npu.blocks.npublocknewclasses.NormalStructure;
 import com.tf.npu.util.FileDataGetter;
 import com.tf.npu.util.FolderDataGetter;
@@ -82,17 +84,28 @@ public class NpuBlocks
         {
             for (DataOfNpuBlocks data : dataList)
             {
-                ShapeData shapeData =
-                        new FileDataGetter<ShapeData>("../src/main/resources/assets/npu/" + data.modelPath, ShapeData.class).getData();
-
                 RegistryObject<Block> BLOCK;
 
                 BLOCK = switch (StructureType.valueOf(data.StructureType))
                 {
-                    case NORMAL_STRUCTURE -> BLOCKS.register(data.ID, () ->
-                            new NormalStructure(data.createBlockProperties(), LoadMethod.valueOf(data.loadMethod)).setSHAPE(shapeData));
-                    case HORIZONTAL_DIRECTIONAL_STRUCTURE ->  BLOCKS.register(data.ID, () ->
-                            new HorizontalDirectionalStructure(data.createBlockProperties(), LoadMethod.valueOf(data.loadMethod)).setSHAPE(shapeData));
+                    case NORMAL_STRUCTURE ->
+                    {
+                        ShapeData shapeData =
+                                new FileDataGetter<ShapeData>("../src/main/resources/assets/npu/" + data.modelPath, ShapeData.class).getData();
+                        yield BLOCKS.register(data.ID, () ->
+                                new NormalStructure(data.createBlockProperties(), LoadMethod.valueOf(data.loadMethod)).setSHAPE(shapeData));
+                    }
+                    case HORIZONTAL_DIRECTIONAL_STRUCTURE ->
+                    {
+                        ShapeData shapeData =
+                                new FileDataGetter<ShapeData>("../src/main/resources/assets/npu/" + data.modelPath, ShapeData.class).getData();
+                        yield BLOCKS.register(data.ID, () ->
+                                new HorizontalDirectionalStructure(data.createBlockProperties(), LoadMethod.valueOf(data.loadMethod)).setSHAPE(shapeData));
+                    }
+                    case HORIZONTAL_DIRECTIONAL_HALF_SLAB -> BLOCKS.register(data.ID, () ->
+                            new HorizontalDirectionalHalfSlab(data.createBlockProperties()).setCanBeDouble(data.double_enable));
+                    case NORMAL_HALF_SLAB -> BLOCKS.register(data.ID, () ->
+                            new NormalHalfSlab(data.createBlockProperties()).setCanBeDouble(data.double_enable));
                 };
 
                 blockList.add(BLOCK);
@@ -103,7 +116,9 @@ public class NpuBlocks
     public static enum StructureType
     {
         NORMAL_STRUCTURE,
-        HORIZONTAL_DIRECTIONAL_STRUCTURE;
+        HORIZONTAL_DIRECTIONAL_STRUCTURE,
+        NORMAL_HALF_SLAB,
+        HORIZONTAL_DIRECTIONAL_HALF_SLAB;
     }
     public static enum EnumMaterial
     {
