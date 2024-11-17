@@ -3,7 +3,7 @@
   "ID": "white_porcelain_wall",
   "modelPath": "models/block/wall/white_porcelain_wall.json",
   "loadMethod": "ROUGH",
-  "Material": "IRON",
+  "Material": "ROCK",
   "noOcclusion": true,
   "noCollision": false,
   "noLootTable": false,

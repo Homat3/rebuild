@@ -3,7 +3,7 @@
   "ID": "limed_wall",
   "modelPath": "models/block/wall/limed_wall.json",
   "loadMethod": "ROUGH",
-  "Material": "IRON",
+  "Material": "ROCK",
   "noOcclusion": true,
   "noCollision": false,
   "noLootTable": false,

@@ -3,7 +3,7 @@
   "ID": "cement_road_half",
   "modelPath": "models/block/cement_road/cement_road_half.json",
   "loadMethod": "ROUGH",
-  "Material": "IRON",
+  "Material": "ROCK",
   "noOcclusion": true,
   "noCollision": false,
   "noLootTable": false,

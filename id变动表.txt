@@ -85,3 +85,6 @@ winnn20 -> blue_window_single
 winnn21 -> blue_window_grille3
 winnn22 -> blue_window_small_grey
 winnn23 -> blue_window2_railing
+winw1 -> white_window
+winw2 -> white_window_railing
+winw3 -> white_window_small

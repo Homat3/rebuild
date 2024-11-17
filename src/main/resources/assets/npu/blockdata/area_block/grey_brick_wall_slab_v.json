@@ -3,7 +3,7 @@
   "ID": "grey_brick_wall_slab_v",
   "modelPath": "models/block/wall/grey_brick_wall_slab_v.json",
   "loadMethod": "ROUGH",
-  "Material": "IRON",
+  "Material": "ROCK",
   "noOcclusion": true,
   "noCollision": false,
   "noLootTable": false,

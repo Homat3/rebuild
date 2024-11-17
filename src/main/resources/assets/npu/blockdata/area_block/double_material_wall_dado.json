@@ -3,7 +3,7 @@
   "ID": "double_material_wall_dado",
   "modelPath": "models/block/wall/double_material_wall_dado.json",
   "loadMethod": "ROUGH",
-  "Material": "IRON",
+  "Material": "ROCK",
   "noOcclusion": true,
   "noCollision": false,
   "noLootTable": false,

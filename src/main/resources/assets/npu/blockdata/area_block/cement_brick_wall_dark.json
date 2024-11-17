@@ -3,7 +3,7 @@
   "ID": "cement_brick_wall_dark",
   "modelPath": "models/block/wall/cement_brick_wall_dark.json",
   "loadMethod": "ROUGH",
-  "Material": "IRON",
+  "Material": "ROCK",
   "noOcclusion": true,
   "noCollision": false,
   "noLootTable": false,
