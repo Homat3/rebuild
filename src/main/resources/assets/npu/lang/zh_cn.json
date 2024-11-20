@@ -1,6 +1,7 @@
 {
   "creativemodetab.npu.area_block_tab": "NPU区域方块",
   "creativemodetab.npu.construction_block_tab": "NPU建筑方块",
+  "creativemodetab.npu.indoor_block_tab": "NPU室内方块",
   "creativemodetab.npu.entity_item_tab": "NPU实体物品",
   "creativemodetab.npu.road_block_tab": "NPU道路方块",
   "creativemodetab.npu.playground_block_tab": "NPU操场方块",
@@ -33,6 +34,11 @@
 
   "block.npu.mesh": "网栅墙",
 
+  "block.npu.chair_auditorium_red": "观众席-红",
+  "block.npu.chair_auditorium_half_red": "观众席-红-半",
+  "block.npu.chair_auditorium_blue": "观众席-蓝",
+  "block.npu.chair_auditorium_half_blue": "观众席-蓝-半",
+  "block.npu.chair_lightblue": "蓝色板凳",
   "block.npu.playground_grass_dry": "操场-干草地",
   "block.npu.playground_plastic_green": "操场-绿色塑胶块",
 
@@ -118,7 +124,7 @@
   "block.npu.window_out": "阳台凸出窗",
 
   "block.npu.black_window1": "黑窗-1.5x3",
-  "block.npu.black_window1_logo": "黑窗-1.5x3无logo",
+  "block.npu.black_window1_no_logo": "黑窗-1.5x3无logo",
   "block.npu.black_window2": "黑窗-1x1(可开关)",
   "block.npu.black_window2_railing": "黑窗-1x1带栏杆",
   "block.npu.black_window3": "黑窗-1x2",
@@ -147,7 +153,7 @@
   "block.npu.blue_window_right": "蓝窗-1x2右开窗",
   "block.npu.blue_window_left": "蓝窗-1x2左开窗",
   "block.npu.blue_window8": "蓝窗-3x2",
-  "block.npu.blue_window1_no_logo": "蓝窗-1.5x3无logob",
+  "block.npu.blue_window1_no_logo": "蓝窗-1.5x3无logo",
   "block.npu.blue_window_grille1": "蓝窗-格栅2x1",
   "block.npu.blue_window_grille2": "蓝窗-格栅3x1",
   "block.npu.blue_window_grille3": "蓝窗-格栅1x1",
@@ -159,10 +165,23 @@
   "block.npu.white_window_railing": "白窗-1x1带栏杆",
   "block.npu.white_window_small": "空小窗-白",
 
+  "block.npu.bedboy_left_table": "男寝上床下桌（左）",
+  "block.npu.bedboy_right_table": "男寝上床下桌（右）",
+  "block.npu.bedboy_left_table_ladder": "男寝上床下桌（左梯）",
+  "block.npu.bedboy_right_table_ladder": "男寝上床下桌（右梯）",
+  "block.npu.bedboy_right_table_ladder_laptop": "彩蛋-物理机",
+
+  "block.npu.bedgirl_left": "女寝双人床左",
+  "block.npu.bedgirl_right": "女寝双人床右",
+
+  "block.npu.camera_wall": "监控摄像头（靠墙）",
+  "block.npu.camera_ceil": "监控摄像头（吊顶）",
+
   "entity.npu.golden_chicken": "金鸡",
-  "entity.npu.school_bus": "西工大校车",
+  "entity.npu.school_bus": "校车",
 
   "item.npu.golden_egg": "金鸡蛋",
-  "item.npu.golden_chicken_spawn_egg": "生成金鸡"
+  "item.npu.golden_chicken_spawn_egg": "生成金鸡",
+  "item.npu.school_bus_spawn_egg": "生成校车"
 
 }

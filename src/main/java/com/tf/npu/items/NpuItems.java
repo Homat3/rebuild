@@ -37,6 +37,8 @@ public class NpuItems
                 new FolderDataGetter<>(dataPath + "area_block", DataOfNpuItems.class).getList()),
         ConstructionBlock(NpuBlocks.TabType.ConstructionBlock,
                 new FolderDataGetter<>(dataPath + "construction_block", DataOfNpuItems.class).getList()),
+        IndoorBlock(NpuBlocks.TabType.IndoorBlock,
+                new FolderDataGetter<>(dataPath + "indoor_block", DataOfNpuItems.class).getList()),
         RoadBlock(NpuBlocks.TabType.RoadBlock,
                 new FolderDataGetter<>(dataPath + "road_block", DataOfNpuItems.class).getList()),
         PlaygroundBlock(NpuBlocks.TabType.PlaygroundBlock,

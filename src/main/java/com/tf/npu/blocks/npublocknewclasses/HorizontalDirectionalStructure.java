@@ -105,11 +105,12 @@ public class HorizontalDirectionalStructure extends HorizontalDirectionalBlock
                 {
                     AABB a = shape.bounds();
                     AABB b = voxelShape.bounds();
-                    shape = getShapeByDirection(Shapes.box(
+                    shape = Shapes.box(
                                     Math.min(a.minX, b.minX), Math.min(a.minY, b.minY), Math.min(a.minZ, b.minZ),
-                                    Math.max(a.maxX, b.maxX), Math.max(a.maxY, b.maxY), Math.max(a.maxZ, b.maxZ)),
-                            direction);
+                                    Math.max(a.maxX, b.maxX), Math.max(a.maxY, b.maxY), Math.max(a.maxZ, b.maxZ)
+                                        );
                 }
+                shape = getShapeByDirection(shape, direction);
                 break;
         }
     }

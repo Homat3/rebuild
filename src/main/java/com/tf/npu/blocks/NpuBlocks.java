@@ -56,6 +56,8 @@ public class NpuBlocks
                 new FolderDataGetter<>(dataPath + "area_block", DataOfNpuBlocks.class).getList()),
         ConstructionBlock(
                 new FolderDataGetter<>(dataPath + "construction_block", DataOfNpuBlocks.class).getList()),
+        IndoorBlock(
+                new FolderDataGetter<>(dataPath + "indoor_block", DataOfNpuBlocks.class).getList()),
         RoadBlock(
                 new FolderDataGetter<>(dataPath + "road_block", DataOfNpuBlocks.class).getList()),
         PlaygroundBlock(

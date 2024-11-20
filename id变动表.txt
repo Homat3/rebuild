@@ -54,7 +54,7 @@ winn9 -> black_window7
 winn10 -> black_blinds
 winn11 -> black_door1
 winn12 -> 与上合并
-winn13 -> black_window1_logo
+winn13 -> black_window1_no_logo
 winn14 -> black_window8
 winn15 -> black_door2
 winn16 -> 与上合并
@@ -88,3 +88,5 @@ winnn23 -> blue_window2_railing
 winw1 -> white_window
 winw2 -> white_window_railing
 winw3 -> white_window_small
+bedgirll -> bedgirl_left
+bedgirlr -> bedgirl_right

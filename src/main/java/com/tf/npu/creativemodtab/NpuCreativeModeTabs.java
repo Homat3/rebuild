@@ -24,6 +24,7 @@ public class NpuCreativeModeTabs
     //public static final String EXAMPLE_BLOCK_TAB_ID = "example_block_tab";
     public static final String AREA_BLOCK_TAB_ID = "area_block_tab";
     public static final String CONSTRUCTION_BLOCK_TAB_ID = "construction_block_tab";
+    public static final String INDOOR_BLOCK_TAB_ID = "indoor_block_tab";
     public static final String ROAD_BLOCK_TAB_ID = "road_block_tab";
     public static final String PLAYGROUND_BLOCK_TAB_ID = "playground_block_tab";
     public static final String ENTITY_ITEM_TAB_ID = "entity_item_tab";
@@ -76,6 +77,21 @@ public class NpuCreativeModeTabs
                         output.accept(ITEM.get());
                 }
                 )
+            .build());
+
+    public static final RegistryObject<CreativeModeTab> INDOOR_BLOCK_TAB = CREATIVE_MODE_TABS.register(INDOOR_BLOCK_TAB_ID, () -> CreativeModeTab.builder()
+            .title(Component.translatable("creativemodetab.npu." + INDOOR_BLOCK_TAB_ID))
+            .withTabsBefore(CreativeModeTabs.COMBAT)
+            .icon(() -> new ItemStack(NpuItems.TabType.IndoorBlock.blockItemList.get(0).get()))
+            .displayItems((itemDisplayParameters, output) ->
+                {
+                //加物品
+                for (var BLOCK_ITEM : NpuItems.TabType.IndoorBlock.blockItemList)
+                    output.accept(BLOCK_ITEM.get());
+                for (var ITEM : NpuItems.TabType.IndoorBlock.itemList)
+                    output.accept(ITEM.get());
+                }
+            )
             .build());
 
     public static final RegistryObject<CreativeModeTab> NPU_ROAD_BLOCK_TAB = CREATIVE_MODE_TABS.register(ROAD_BLOCK_TAB_ID, () -> CreativeModeTab.builder()
