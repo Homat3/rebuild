@@ -90,3 +90,4 @@ winw2 -> white_window_railing
 winw3 -> white_window_small
 bedgirll -> bedgirl_left
 bedgirlr -> bedgirl_right
+fg53 -> white_grid_top_teachingbuilding_east
