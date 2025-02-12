@@ -182,6 +182,20 @@
 
   "item.npu.golden_egg": "金鸡蛋",
   "item.npu.golden_chicken_spawn_egg": "生成金鸡",
-  "item.npu.school_bus_spawn_egg": "生成校车"
+  "item.npu.school_bus_spawn_egg": "生成校车",
+
+  "block.npu.limed_wall_dado_slab_v1":"白灰墙带裙竖八分之五砖",
+  "block.npu.limed_wall_dado_slab_corner_v2":"白灰墙带裙竖八分之五砖拐角",
+  "block.npu.limed_wall_dado_slab_v3":"白灰墙带裙竖半砖",
+  "block.npu.limed_wall_dado_slab_corner_v4":"白灰墙带裙竖半砖拐角",
+  "block.npu.limed_wall_slab_v5":"白灰墙竖八分之五砖",
+  "block.npu.limed_wall_slab_corner_v6":"白灰墙竖八分之五砖拐角",
+  "block.npu.limed_wall_slab_v7":"白灰墙竖半砖",
+  "block.npu.limed_wall_slab_corner_v8":"白灰墙竖半砖拐角",
+  "block.npu.external_air_conditioner_right":"空调外机右",
+  "block.npu.washstand_back_to_right":"洗手台后偏右",
+  "block.npu.washstand_back_to_left":"洗手台后偏左",
+  "block.npu.yunf_dormitory_door_back_to":"云F宿舍门后偏",
+  "block.npu.yunf_dormitory_door_back_to_up":"云F宿舍门后偏补上"
 
 }
