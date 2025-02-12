@@ -90,3 +90,20 @@ winw2 -> white_window_railing
 winw3 -> white_window_small
 bedgirll -> bedgirl_left
 bedgirlr -> bedgirl_right
+<<<<<<< HEAD
+yf -> limed_wall_dado_slab_v1
+yf1 -> limed_wall_dado_slab_corner_v2
+yf2 -> limed_wall_dado_slab_v3
+yf3 -> limed_wall_dado_slab_corner_v4
+yf4 -> limed_wall_slab_v5
+yf5 -> limed_wall_slab_corner_v6
+yf6 -> limed_wall_slab_v7
+yf7 -> limed_wall_slab_v8
+yf8 -> external_air_conditioner_right
+yf9 -> washstand_back_to_right
+yf10 -> washstand_back_to_left
+yf11 -> yunf_dormitory_door_back_to
+yf12 -> yunf_dormitory_door_back_to_up
+=======
+fg53 -> white_grid_top_teachingbuilding_east
+>>>>>>> 0b03cf97d442d6f329bc95a3af6a52fd8a120b82
