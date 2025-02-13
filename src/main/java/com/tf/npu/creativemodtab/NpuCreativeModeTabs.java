@@ -16,7 +16,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class NpuCreativeModeTabs
 {
 
-    // Create a Deferred Register to hold CreativeModeTabs which will all be registered under the "npu" namespace
+    // Create grey_brick.json Deferred Register to hold CreativeModeTabs which will all be registered under the "npu" namespace
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Reference.MODID);
 
 

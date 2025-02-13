@@ -17,7 +17,7 @@ import java.util.function.Supplier;
 
 public class NpuEntities
 {
-    // Create a Deferred Register to hold items which will all be registered under the "npu" namespace
+    // Create grey_brick.json Deferred Register to hold items which will all be registered under the "npu" namespace
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, Reference.MODID);
     public static final Map<String, Supplier<? extends EntityType<? extends Mob>>> ID_MAP = new HashMap<>(0);
 

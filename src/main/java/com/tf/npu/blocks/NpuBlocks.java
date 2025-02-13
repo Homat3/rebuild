@@ -24,7 +24,7 @@ import java.util.function.ToIntFunction;
 
 public class NpuBlocks
 {
-    // Create a Deferred Register to hold Blocks which will all be registered under the "npu" namespace
+    // Create grey_brick.json Deferred Register to hold Blocks which will all be registered under the "npu" namespace
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Reference.MODID);
     public static final String dataPath = "blockdata/";
 
