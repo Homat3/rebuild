@@ -113,3 +113,16 @@ fg72 -> small_ceramic_tiles
 fg73 -> balcony_white_ceramic_tiles_in_yun_f
 fg74 -> blue_ceramic_tile_vertical_quarter_brick
 fg75 -> stone_brick_vertical_quarter_brick
+yf -> limed_wall_dado_slab_v1
+yf1 -> limed_wall_dado_slab_corner_v2
+yf2 -> limed_wall_dado_slab_v3
+yf3 -> limed_wall_dado_slab_corner_v4
+yf4 -> limed_wall_slab_v5
+yf5 -> limed_wall_slab_corner_v6
+yf6 -> limed_wall_slab_v7
+yf7 -> limed_wall_slab_v8
+yf8 -> external_air_conditioner_right
+yf9 -> washstand_back_to_right
+yf10 -> washstand_back_to_left
+yf11 -> yunf_dormitory_door_back_to
+yf12 -> yunf_dormitory_door_back_to_up
