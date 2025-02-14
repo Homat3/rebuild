@@ -126,3 +126,24 @@ yf9 -> washstand_back_to_right
 yf10 -> washstand_back_to_left
 yf11 -> yunf_dormitory_door_back_to
 yf12 -> yunf_dormitory_door_back_to_up
+g1 -> marble_tiles
+g2 -> marble_tiles_black
+g3 -> marble_pillar
+g4 -> white_stone_brick
+g5 -> red_brick_floor
+g6 -> pedestrian_road_pattern_brick_white
+g7 -> pedestrian_road_pattern_brick_red
+g8 -> slate_floor_tiles_staggered_style_1
+g9 -> slate_floor_tiles_staggered_style_2
+g10 -> slate_floor_tiles_style_1
+g11 -> slate_floor_tiles_style_2
+g12 -> slate_floor_tiles_style_3
+g13 -> small_slate_floor_tiles
+g14 -> mudstone_brick
+g15 -> blue_marble_brick
+g16 -> vertical_half_brick_cement_wall
+g17 -> bottom_half_brick_cement_wall
+g18 -> top_half_brick_cement_wall
+g19 -> blue_ceramic_tile_lower_half_brick
+g20 -> marble_pillar_vertical_half_brick
+
