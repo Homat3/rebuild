@@ -1,0 +1,5 @@
+{
+  "loader": "forge:obj",
+  "model": "npu:models/block/tent/tent_blue/tent_blue_15.obj",
+  "flip-v": true
+}

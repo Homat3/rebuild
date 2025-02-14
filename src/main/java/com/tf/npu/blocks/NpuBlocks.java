@@ -105,10 +105,29 @@ public class NpuBlocks
                         yield BLOCKS.register(data.ID, () ->
                                 new HorizontalDirectionalStructure(data.createBlockProperties(), LoadMethod.valueOf(data.loadMethod)).setSHAPE(shapeData));
                     }
-                    case HORIZONTAL_DIRECTIONAL_HALF_SLAB -> BLOCKS.register(data.ID, () ->
-                            new HorizontalDirectionalHalfSlab(data.createBlockProperties()).setCanBeDouble(data.double_enable));
+                    case HORIZONTAL_MULTIPLE_DIRECTIONAL_STRUCTURE ->
+                    {
+                        ShapeData shapeData0 =
+                                new FileDataGetter<>("../src/main/resources/assets/npu/" + data.modelPath0, ShapeData.class).getData();
+                        ShapeData shapeData15 =
+                                new FileDataGetter<>("../src/main/resources/assets/npu/" + data.modelPath15, ShapeData.class).getData();
+                        ShapeData shapeData30 =
+                                new FileDataGetter<>("../src/main/resources/assets/npu/" + data.modelPath30, ShapeData.class).getData();
+                        ShapeData shapeData45 =
+                                new FileDataGetter<>("../src/main/resources/assets/npu/" + data.modelPath45, ShapeData.class).getData();
+                        ShapeData shapeData60 =
+                                new FileDataGetter<>("../src/main/resources/assets/npu/" + data.modelPath60, ShapeData.class).getData();
+                        ShapeData shapeData75 =
+                                new FileDataGetter<>("../src/main/resources/assets/npu/" + data.modelPath75, ShapeData.class).getData();
+                        yield BLOCKS.register(data.ID, () ->
+                                new HorizontalMultipleDirectionalStructure(data.createBlockProperties(), LoadMethod.valueOf(data.loadMethod))
+                                        .setSHAPE(shapeData0, shapeData15, shapeData30, shapeData45, shapeData60, shapeData75));
+                    }
+
                     case NORMAL_HALF_SLAB -> BLOCKS.register(data.ID, () ->
                             new NormalHalfSlab(data.createBlockProperties()).setCanBeDouble(data.double_enable));
+                    case HORIZONTAL_DIRECTIONAL_HALF_SLAB -> BLOCKS.register(data.ID, () ->
+                            new HorizontalDirectionalHalfSlab(data.createBlockProperties()).setCanBeDouble(data.double_enable));
                     case DOOR_AND_WINDOW ->
                     {
                         ShapeData shapeData1 =
@@ -129,6 +148,7 @@ public class NpuBlocks
     {
         NORMAL_STRUCTURE,
         HORIZONTAL_DIRECTIONAL_STRUCTURE,
+        HORIZONTAL_MULTIPLE_DIRECTIONAL_STRUCTURE,
         NORMAL_HALF_SLAB,
         HORIZONTAL_DIRECTIONAL_HALF_SLAB,
         DOOR_AND_WINDOW

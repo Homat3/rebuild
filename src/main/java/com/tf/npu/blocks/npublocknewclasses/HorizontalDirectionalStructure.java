@@ -44,7 +44,7 @@ public class HorizontalDirectionalStructure extends HorizontalDirectionalBlock
     //与构造并用
     public HorizontalDirectionalStructure setSHAPE(ShapeData shapeData)
     {
-        for (List<Double> shape : shapeData.getShapeList())
+        if (!shapeData.loaderIsObj()) for (List<Double> shape : shapeData.getShapeList())
         {
             shapeList.add(Shapes.box(shape.get(0), shape.get(1), shape.get(2), shape.get(3), shape.get(4), shape.get(5)));
         }
@@ -90,7 +90,8 @@ public class HorizontalDirectionalStructure extends HorizontalDirectionalBlock
 
     private void loadShape()
     {
-        switch (loadMethod)
+        shape = NpuBlocks.EmunShape.FULL_SHPAE.getShape();
+        if (!shapeList.isEmpty()) switch (loadMethod)
         {
             case METICULOUS:
                 shape = NpuBlocks.EmunShape.NULL_SHPAE.getShape();
