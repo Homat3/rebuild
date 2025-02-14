@@ -1,20 +1,20 @@
 {
   "variants": {
     "facing=north": {
-      "model": "npu:block/floor/floor4"
+      "model": "npu:block/sign/floor4"
     },
     "facing=east": {
-      "model": "npu:block/floor/floor4",
+      "model": "npu:block/sign/floor4",
       "y": 90,
       "uvlock": false
     },
     "facing=south": {
-      "model": "npu:block/floor/floor4",
+      "model": "npu:block/sign/floor4",
       "y": 180,
       "uvlock": false
     },
     "facing=west": {
-      "model": "npu:block/floor/floor4",
+      "model": "npu:block/sign/floor4",
       "y": 270,
       "uvlock": false
     }
