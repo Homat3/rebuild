@@ -3,7 +3,7 @@
   "textures": {
     "0": "npu:block/npunew/wall/baicizhuan",
     "1": "npu:block/npunew/wall/shuinizhuanqiang",
-    "particle": "npu:blocknpunew/wall/baicizhuan"
+    "particle": "npu:block/npunew/wall/baicizhuan"
   },
   "elements": [
     {
