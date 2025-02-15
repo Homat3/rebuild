@@ -225,7 +225,6 @@
   "block.npu.sign_yty_yun":"云天苑-云",
   "block.npu.sign_yty_tian":"云天苑-天",
   "block.npu.sign_yty_yuan":"云天苑-苑",
-
   "block.npu.white_grid_top_teachingbuilding_east":"教东白格栅顶",
   "block.npu.white_grid_top_teachingbuilding_east_edge":"教东白格栅顶-边",
   "block.npu.teachingbuilding_east_innerwall_up":"教东教室内墙-上",
@@ -248,7 +247,6 @@
   "block.npu.small_ceramic_tiles":"小瓷砖",
   "block.npu.balcony_white_ceramic_tiles_in_yun_f":"云F阳台白瓷砖",
   "block.npu.blue_ceramic_tile_vertical_quarter_brick":"青色陶瓦竖四分之一砖",
-
   "block.npu.marble_tiles":"大理石地砖",
   "block.npu.marble_tiles_black":"大理石地砖黑",
   "block.npu.marble_pillar":"大理石立柱",
@@ -268,7 +266,6 @@
   "block.npu.bottom_half_brick_cement_wall":"水泥墙下半砖",
   "block.npu.top_half_brick_cement_wall":"水泥墙上半砖",
   "block.npu.blue_ceramic_tile_lower_half_brick":"青色陶瓦下半砖",
-  "block.npu.marble_pillar_vertical_half_brick":"大理石立柱竖半砖",
 
   "block.npu.access_control_face_recognition":"门禁-人脸识别",
   "block.npu.access_control_add1":"门禁补充阵列1",
@@ -281,4 +278,5 @@
   "block.npu.atlas":"护卫",
   "block.npu.box":"杂物纸箱",
   "block.npu.box1":"纸盒箱组"
+
 }
