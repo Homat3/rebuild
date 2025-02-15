@@ -39,14 +39,24 @@ Made by Homat3
 注意少修改原模组中的方块ID，因为移植后Minecraft会认不得，但是遇到某些过分的ID就改了吧
 
 1. 根据原模组中方块的信息判断是哪种方块 
-    NORMALSTRUCTURE                             普通方块
-    HORIZONTALDIRECTIONALSTRUCTURE              具有东南西北四个方向的方块
-    NORMALHALFSLAB                              普通可堆叠的台阶方块
-    HORIZONTALDIRECTIONALHALFSLAB               具有东南西北四个方向的可堆叠的台阶方块
-    DOORANDWINDOW                               具有开关两种模型的方块
+
+    NORMAL_STRUCTURE                                普通方块
+
+    HORIZONTAL_DIRECTIONAL_STRUCTURE                具有东南西北四个方向的方块
+
+    HORIZONTAL_MULTIPLE_DIRECTIONAL_STRUCTURE       具有十二个方向的方块
+
+    NORMAL_HALF_SLAB                                普通可堆叠的台阶方块
+
+    HORIZONTAL_DIRECTIONAL_HALF_SLAB                具有东南西北四个方向的可堆叠的台阶方块
+
+    DOOR_AND_WINDOW                                 具有开关两种模型的方块
+
     （更多类型敬请期待）
 2. 根据原模组中方块的信息判断方块材质
+
     IRON
+
     ROCK
 3. 将属性写入json文件中并存放到blockstates/data/中你希望的创造模式物品栏文件夹下
 4. 从原模组资源文件中导入资源，导入前记得搜索一下重构模组这里是不是已经有了，别搞重复了，而且需要对导入的json文件中的路径进行亿点修改
@@ -72,6 +82,9 @@ NpuBlocks.class里声明了常用材料属性和常用体积模型属性的枚�
    3. 实体类中需要实现registerAttributes()方法来设置实体属性，而实体渲染类中需要指定贴图和缩放方式
    4. 在NpuEntities进行注册，注意写入ID_MAP中
    5. 加入生物蛋的json数据，以及其他资源文件
+3. geo实体
+    
+    （敬请期待）
 
 涉及资源lang，textures/entity，models/item
 

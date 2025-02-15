@@ -7,18 +7,30 @@ public class DataOfNpuBlocks
 {
     public String StructureType;
     public String ID;
+
     //structure
     public String modelPath;
     public String loadMethod;
     //structure
+
+    //MultipleDirection
+    public String modelPath0;
+    public String modelPath15;
+    public String modelPath30;
+    public String modelPath45;
+    public String modelPath60;
+    public String modelPath75;
+    //MultipleDirection
+
     //HalfSlab
     public boolean double_enable;
     //HalfSlab
+
     //DoorAndWindow
     public String open_modelPath;
     public String close_modelPath;
-    //loadMethod
     //DoorAndWindow
+
     public String Material;
     public boolean noOcclusion;
     public boolean noCollision;

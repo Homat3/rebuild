@@ -5,10 +5,21 @@ import java.util.List;
 
 public class ShapeData
 {
+    public String loader;
     public Element[] elements;
+
+    public Boolean loaderIsObj(){
+        if (loader==null) return false;
+        else return loader.equals("forge:obj");
+    }
 
     public ArrayList<List<Double>> getShapeList()
     {
+        if (loaderIsObj())
+        {
+            return null;
+        }
+
         ArrayList<List<Double>> shapeList = new ArrayList<>(0);
 
         for (Element element : elements)

@@ -1,8 +1,8 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "1": "npu:block/npunew/wall/suliaozhuanqiang5",
-    "particle": "npu:block/npunew/wall/suliaozhuanqiang5"
+    "1": "npu:block/npunew/wall/plastic_brick_wall",
+    "particle": "npu:block/npunew/wall/plastic_brick_wall"
   },
   "elements": [
     {

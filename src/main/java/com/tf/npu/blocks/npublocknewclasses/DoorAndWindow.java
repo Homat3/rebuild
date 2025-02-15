@@ -46,11 +46,11 @@ public class DoorAndWindow extends HorizontalDirectionalStructure
     //与构造并用
     public DoorAndWindow setSHAPE(ShapeData openShapeData, ShapeData closeShapeData)
     {
-        for (List<Double> shape : openShapeData.getShapeList())
+        if (!openShapeData.loaderIsObj()) for (List<Double> shape : openShapeData.getShapeList())
         {
             shapeList_open.add(Shapes.box(shape.get(0), shape.get(1), shape.get(2), shape.get(3), shape.get(4), shape.get(5)));
         }
-        for (List<Double> shape : closeShapeData.getShapeList())
+        if (!closeShapeData.loaderIsObj()) for (List<Double> shape : closeShapeData.getShapeList())
         {
             shapeList_close.add(Shapes.box(shape.get(0), shape.get(1), shape.get(2), shape.get(3), shape.get(4), shape.get(5)));
         }
@@ -74,7 +74,8 @@ public class DoorAndWindow extends HorizontalDirectionalStructure
     private void loadShape()
     {
         ArrayList<VoxelShape> shapeList = open ? shapeList_open : shapeList_close;
-        switch (loadMethod)
+        shape = NpuBlocks.EmunShape.HALF_SHPAE_BOTTOM.getShape();
+        if(!shapeList.isEmpty()) switch (loadMethod)
         {
             case METICULOUS:
                 shape = NpuBlocks.EmunShape.NULL_SHPAE.getShape();
