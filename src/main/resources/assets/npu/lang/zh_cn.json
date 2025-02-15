@@ -308,6 +308,19 @@
 
   "block.npu.tent_blue":"帐篷-蓝色",
   "block.npu.tent_blue_2021baituan":"帐篷-蓝色-2021百团大作战特供版",
-  "block.npu.tent_red":"帐篷-红色"
+  "block.npu.tent_red":"帐篷-红色",
+
+  "block.npu.access_control_face_recognition":"门禁-人脸识别",
+  "block.npu.access_control_add1":"门禁补充阵列1",
+  "block.npu.access_control_add2":"门禁补充阵列2",
+  "block.npu.airconin":"空调内机",
+  "block.npu.airconout":"空调外机",
+  "block.npu.airconout1":"中央空调外机1",
+  "block.npu.airconout2":"中央空调外机2",
+  "block.npu.atable":"宿管桌子",
+  "block.npu.atlas":"护卫",
+  "block.npu.box":"杂物纸箱",
+  "block.npu.box1":"纸盒箱组"
+
 
 }

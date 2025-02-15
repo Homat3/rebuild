@@ -183,6 +183,9 @@ g52 -> yellow_floor
 g53 -> stone_brick_vertical_half_brick
 g54 -> stone_brick_dual_material_wall
 g55 -> stone_brick_dual_material_wall_with_wall_skirt
+ac -> access_control_face_recognition
+acadd1 -> access_control_add1
+acadd2 -> access_control_add2
 
 
 
