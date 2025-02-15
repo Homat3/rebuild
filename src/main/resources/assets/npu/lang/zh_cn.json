@@ -268,5 +268,17 @@
   "block.npu.bottom_half_brick_cement_wall":"水泥墙下半砖",
   "block.npu.top_half_brick_cement_wall":"水泥墙上半砖",
   "block.npu.blue_ceramic_tile_lower_half_brick":"青色陶瓦下半砖",
-  "block.npu.marble_pillar_vertical_half_brick":"大理石立柱竖半砖"
+  "block.npu.marble_pillar_vertical_half_brick":"大理石立柱竖半砖",
+
+  "block.npu.access_control_face_recognition":"门禁-人脸识别",
+  "block.npu.access_control_add1":"门禁补充阵列1",
+  "block.npu.access_control_add2":"门禁补充阵列2",
+  "block.npu.airconin":"空调内机",
+  "block.npu.airconout":"空调外机",
+  "block.npu.airconout1":"中央空调外机1",
+  "block.npu.airconout2":"中央空调外机2",
+  "block.npu.atable":"宿管桌子",
+  "block.npu.atlas":"护卫",
+  "block.npu.box":"杂物纸箱",
+  "block.npu.box1":"纸盒箱组"
 }

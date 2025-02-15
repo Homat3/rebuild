@@ -146,4 +146,8 @@ g17 -> bottom_half_brick_cement_wall
 g18 -> top_half_brick_cement_wall
 g19 -> blue_ceramic_tile_lower_half_brick
 g20 -> marble_pillar_vertical_half_brick
+ac -> access_control_face_recognition
+acadd1 -> access_control_add1
+acadd2 -> access_control_add2
+
 
