@@ -225,7 +225,6 @@
   "block.npu.sign_yty_yun":"云天苑-云",
   "block.npu.sign_yty_tian":"云天苑-天",
   "block.npu.sign_yty_yuan":"云天苑-苑",
-
   "block.npu.white_grid_top_teachingbuilding_east":"教东白格栅顶",
   "block.npu.white_grid_top_teachingbuilding_east_edge":"教东白格栅顶-边",
   "block.npu.teachingbuilding_east_innerwall_up":"教东教室内墙-上",
@@ -248,7 +247,6 @@
   "block.npu.small_ceramic_tiles":"小瓷砖",
   "block.npu.balcony_white_ceramic_tiles_in_yun_f":"云F阳台白瓷砖",
   "block.npu.blue_ceramic_tile_vertical_quarter_brick":"青色陶瓦竖四分之一砖",
-
   "block.npu.marble_tiles":"大理石地砖",
   "block.npu.marble_tiles_black":"大理石地砖黑",
   "block.npu.marble_pillar":"大理石立柱",
@@ -310,5 +308,19 @@
 
   "block.npu.tent_blue":"帐篷-蓝色",
   "block.npu.tent_blue_2021baituan":"帐篷-蓝色-2021百团大作战特供版",
-  "block.npu.tent_red":"帐篷-红色"
+  "block.npu.tent_red":"帐篷-红色",
+
+  "block.npu.access_control_face_recognition":"门禁-人脸识别",
+  "block.npu.access_control_add1":"门禁补充阵列1",
+  "block.npu.access_control_add2":"门禁补充阵列2",
+  "block.npu.airconin":"空调内机",
+  "block.npu.airconout":"空调外机",
+  "block.npu.airconout1":"中央空调外机1",
+  "block.npu.airconout2":"中央空调外机2",
+  "block.npu.atable":"宿管桌子",
+  "block.npu.atlas":"护卫",
+  "block.npu.box":"杂物纸箱",
+  "block.npu.box1":"纸盒箱组"
+
+
 }
