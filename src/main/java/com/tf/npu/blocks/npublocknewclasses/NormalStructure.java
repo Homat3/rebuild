@@ -45,7 +45,7 @@ public class NormalStructure extends Block
 
     private void loadShape()
     {
-        shape = NpuBlocks.EmunShape.FULL_SHPAE.getShape();
+        shape = NpuBlocks.EmunShape.HALF_SHPAE_BOTTOM.getShape();
         if (!shapeList.isEmpty()) switch (loadMethod)
         {
             case METICULOUS:

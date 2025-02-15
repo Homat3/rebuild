@@ -306,5 +306,9 @@
   "block.npu.yellow_floor":"黄色地板",
   "block.npu.stone_brick_vertical_half_brick":"石砖竖半砖",
   "block.npu.stone_brick_dual_material_wall":"石砖双材墙",
-  "block.npu.stone_brick_dual_material_wall_with_wall_skirt":"石砖双材墙带墙裙"
+  "block.npu.stone_brick_dual_material_wall_with_wall_skirt":"石砖双材墙带墙裙",
+
+  "block.npu.tent_blue":"帐篷-蓝色",
+  "block.npu.tent_blue_2021baituan":"帐篷-蓝色-2021百团大作战特供版",
+  "block.npu.tent_red":"帐篷-红色"
 }

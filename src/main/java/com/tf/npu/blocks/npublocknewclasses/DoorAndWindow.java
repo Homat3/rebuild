@@ -74,7 +74,7 @@ public class DoorAndWindow extends HorizontalDirectionalStructure
     private void loadShape()
     {
         ArrayList<VoxelShape> shapeList = open ? shapeList_open : shapeList_close;
-        shape = NpuBlocks.EmunShape.FULL_SHPAE.getShape();
+        shape = NpuBlocks.EmunShape.HALF_SHPAE_BOTTOM.getShape();
         if(!shapeList.isEmpty()) switch (loadMethod)
         {
             case METICULOUS:

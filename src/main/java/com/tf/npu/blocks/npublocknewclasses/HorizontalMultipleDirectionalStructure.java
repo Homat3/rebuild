@@ -4,13 +4,19 @@ import com.tf.npu.blocks.NpuBlocks;
 import com.tf.npu.blocks.dataofnpublocks.ShapeData;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.AABB;
+import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -77,17 +83,10 @@ public class HorizontalMultipleDirectionalStructure extends Block {
     @Nullable
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
-        BlockPos pos = context.getClickedPos();
-        BlockState state = context.getLevel().getBlockState(pos);
-        if (state.is(this)) {
-            return state
-                    .setValue(ANGEL, (state.getValue(ANGEL) + 15) % 180);
-        } else {
-            return defaultBlockState().setValue(ANGEL, switch(context.getHorizontalDirection().getOpposite()) {
-                case WEST, EAST -> 90;
-                default -> 0;
-            });
-        }
+        return defaultBlockState().setValue(ANGEL, switch(context.getHorizontalDirection().getOpposite()) {
+            case WEST, EAST -> 90;
+            default -> 0;
+        });
     }
     private void loadShape(ShapeData shapeData, ArrayList<VoxelShape> angleShapeList){
         if (!shapeData.loaderIsObj()) for (List<Double> shape : shapeData.getShapeList())
@@ -105,7 +104,7 @@ public class HorizontalMultipleDirectionalStructure extends Block {
             case 5 -> angleShapeList75;
             default -> angleShapeList0;
         };
-        shape = NpuBlocks.EmunShape.FULL_SHPAE.getShape();
+        shape = NpuBlocks.EmunShape.HALF_SHPAE_BOTTOM.getShape();
         if(!shapeList.isEmpty()) switch (loadMethod)
         {
             case METICULOUS:
@@ -138,5 +137,14 @@ public class HorizontalMultipleDirectionalStructure extends Block {
             loadShape();
         }
         return shape.optimize();
+    }
+    @Override
+    public @NotNull InteractionResult use(@NotNull BlockState state, @NotNull Level level, @NotNull BlockPos pos,
+                                          @NotNull Player player, @NotNull InteractionHand hand, @NotNull BlockHitResult res)
+    {
+        state = state.setValue(ANGEL, (state.getValue(ANGEL) + 15) % 180);
+        level.setBlock(pos, state, 10);
+        level.gameEvent(player, GameEvent.BLOCK_CHANGE, pos);
+        return InteractionResult.sidedSuccess(level.isClientSide);
     }
 }
