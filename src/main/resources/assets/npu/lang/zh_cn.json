@@ -8,6 +8,7 @@
   "creativemodetab.npu.road_block_tab": "NPU道路方块",
   "creativemodetab.npu.playground_block_tab": "NPU操场方块",
 
+  "block.npu.airconout1": "空调外机",
   "block.npu.balcony_partition_down": "阳台隔墙下",
   "block.npu.balcony_partition_up": "阳台隔墙上",
   "block.npu.brailing": "阳台栏杆",
@@ -84,8 +85,8 @@
   "block.npu.floor3": "3楼标识牌",
   "block.npu.floor2": "2楼标识牌",
 
-  "block.npu.grey_brick_wall": "青砖墙",
-  "block.npu.grey_brick_wall_slab_v": "青砖墙-竖半砖",
+  "block.npu.gray_brick_wall": "青砖墙",
+  "block.npu.gray_brick_wall_slab_v": "青砖墙-竖半砖",
   "block.npu.cement_brick_wall": "水泥砖墙",
   "block.npu.cement_brick_wall_dark": "水泥砖墙-深",
   "block.npu.cement_brick_wall_slab_v": "水泥砖墙-竖半砖",
@@ -201,7 +202,7 @@
   "block.npu.yunf_dormitory_door_back_to":"云F宿舍门后偏",
   "block.npu.yunf_dormitory_door_back_to_up":"云F宿舍门后偏补上",
 
-  "block.npu.grey_brick":"灰石砖",
+  "block.npu.gray_brick":"灰石砖",
   "block.npu.playground_badminton_net":"羽毛球网",
   "block.npu.playground_badminton_net_side":"羽毛球网-边",
   "block.npu.playground_fence_down":"球场围栏-下",
@@ -273,8 +274,6 @@
   "block.npu.cement_road_a":"水泥路面（3种a)",
   "block.npu.cement_road_b":"水泥路面（3种b)",
   "block.npu.cement_road_c":"水泥路面（3种c)",
-  "block.npu.cement_road_curbstone":"水泥路面+路缘石",
-  "block.npu.cement_road_curbstone_black":"水泥路面+路缘石(黑)",
   "block.npu.cement_road_stripe_1":"水泥路面条纹1",
   "block.npu.cement_road_stripe_2":"水泥路面条纹2",
   "block.npu.cement_road_half_brick_1":"水泥路面半砖1",

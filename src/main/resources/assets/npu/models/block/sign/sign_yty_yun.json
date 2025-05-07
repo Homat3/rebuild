@@ -1,8 +1,8 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "1": "npu:block/npunew/wool_colored/wool_colored_yellow",
-    "particle": "npu:block/npunew/wool_colored/wool_colored_yellow"
+    "1": "npu:block/w/wool_colored_yellow",
+    "particle": "npu:block/w/wool_colored_yellow"
   },
   "elements": [
     {

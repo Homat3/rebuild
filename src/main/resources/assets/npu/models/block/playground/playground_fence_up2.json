@@ -1,8 +1,8 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "6": "npu:block/npunew/fence/fence_cyan",
-    "particle": "npu:block/npunew/fence/fence_cyan"
+    "6": "npu:block/f/fence_cyan",
+    "particle": "npu:block/f/fence_cyan"
   },
   "elements": [
     {

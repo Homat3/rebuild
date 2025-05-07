@@ -31,14 +31,14 @@ public class NPU
 
     public static final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
     /*
-    // Creates grey_brick.json new BlockItem with the id "npu:example_block", combining the namespace and path
+    // Creates gray_brick.json new BlockItem with the id "npu:example_block", combining the namespace and path
     public static final RegistryObject<items> EXAMPLE_BLOCK_ITEM = ITEMS.register("example_block", () -> new BlockItem(EXAMPLE_BLOCK.get(), new items.Properties()));
 
-    // Creates grey_brick.json new food item with the id "npu:example_id", nutrition 1 and saturation 2
+    // Creates gray_brick.json new food item with the id "npu:example_id", nutrition 1 and saturation 2
     public static final RegistryObject<items> EXAMPLE_ITEM = ITEMS.register("example_item", () -> new items(new items.Properties().food(new FoodProperties.Builder()
             .alwaysEat().nutrition(1).saturationMod(2f).build())));
 
-    // Creates grey_brick.json creative tab with the id "npu:example_tab" for the example item, that is placed after the combat tab
+    // Creates gray_brick.json creative tab with the id "npu:example_tab" for the example item, that is placed after the combat tab
     public static final RegistryObject<CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("example_tab", () -> CreativeModeTab.builder()
             .withTabsBefore(CreativeModeTabs.COMBAT)
             .icon(() -> EXAMPLE_ITEM.get().getDefaultInstance())

@@ -1,12 +1,12 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "0": "npu:block/npunew/brick/grey_brick",
-    "1": "npu:block/npunew/cement_road/cement_road",
-    "4": "npu:block/ore/iron/iron_block",
-    "5": "npu:block/color/blue",
-    "6": "npu:block/npunew/fence/fence_cyan",
-    "particle": "npu:block/npunew/brick/grey_brick"
+    "0": "npu:block/g/gray_brick",
+    "1": "npu:block/c/cement_road_a",
+    "4": "npu:block/i/iron_block",
+    "5": "npu:block/b/blue",
+    "6": "npu:block/f/fence_cyan",
+    "particle": "npu:block/g/gray_brick"
   },
   "elements": [
     {

@@ -1,10 +1,10 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "0": "npu:block/npunew/brick/grey_brick",
-    "1": "npu:block/npunew/cement_road/cement_road",
-    "6": "npu:block/npunew/fence/fence_cyan",
-    "particle": "npu:block/npunew/brick/grey_brick"
+    "0": "npu:block/g/gray_brick",
+    "1": "npu:block/c/cement_road_a",
+    "6": "npu:block/f/fence_cyan",
+    "particle": "npu:block/g/gray_brick"
   },
   "elements": [
     {

@@ -5,10 +5,10 @@
     128
   ],
   "textures": {
-    "1": "npu:block/concrete/concrete_light_blue",
-    "2": "npu:block/ore/quartz/quartz_block_side",
-    "3": "npu:block/stone/stone_andesite_smooth",
-    "particle": "npu:block/ore/quartz/quartz_block_side"
+    "1": "npu:block/c/concrete_light_blue",
+    "2": "npu:block/q/quartz_block_side",
+    "3": "npu:block/s/stone_andesite_smooth",
+    "particle": "npu:block/q/quartz_block_side"
   },
   "elements": [
     {

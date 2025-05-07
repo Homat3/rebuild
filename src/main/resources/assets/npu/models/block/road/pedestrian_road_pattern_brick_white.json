@@ -1,9 +1,9 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "1": "npu:block/g/g7",
-    "2": "npu:block/g/g6",
-    "particle": "npu:block/g/g7"
+    "1": "npu:block/p/pedestrian_road_pattern_brick_red",
+    "2": "npu:block/p/pedestrian_road_pattern_brick_white",
+    "particle": "npu:block/p/pedestrian_road_pattern_brick_red"
   },
   "elements": [
     {

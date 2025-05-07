@@ -1,8 +1,8 @@
 {
 	"credit": "Made By NPUcraft",
 	"textures": {
-		"0": "npu:block/npunew/railing/railing_half_double",
-		"particle": "npu:block/npunew/railing/railing_half_double"
+		"0": "npu:block/r/railing_half_double",
+		"particle": "npu:block/r/railing_half_double"
 	},
 	"elements": [
 		{

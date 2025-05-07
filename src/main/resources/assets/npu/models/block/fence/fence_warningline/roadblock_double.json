@@ -2,8 +2,8 @@
 	"credit": "Made By NPUcraft",
 	"texture_size": [32, 32],
 	"textures": {
-		"2": "npu:block/npunew/fence/roadblock_double",
-		"particle": "npu:block/npunew/fence/roadblock_double"
+		"2": "npu:block/r/roadblock_double",
+		"particle": "npu:block/r/roadblock_double"
 	},
 	"elements": [
 		{

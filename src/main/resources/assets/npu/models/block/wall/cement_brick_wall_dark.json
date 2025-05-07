@@ -1,8 +1,8 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "1": "npu:block/npunew/structure/wall/cement_brick_wall_dark",
-    "particle": "npu:block/npunew/structure/wall/cement_brick_wall_dark"
+    "1": "npu:block/c/cement_wall_white",
+    "particle": "npu:block/c/cement_wall_white"
   },
   "elements": [
     {

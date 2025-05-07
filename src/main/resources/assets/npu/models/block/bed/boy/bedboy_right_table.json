@@ -5,10 +5,10 @@
     128
   ],
   "textures": {
-    "4": "npu:block/npunew/wooden_wallpaper/paper9",
-    "5": "npu:block/npunew/wooden_wallpaper/paper9_v",
-    "6": "npu:block/ore/iron/iron_block",
-    "particle": "npu:block/npunew/wooden_wallpaper/paper9_v"
+    "4": "npu:block/p/paper6",
+    "5": "npu:block/p/paper6_v",
+    "6": "npu:block/i/iron_block",
+    "particle": "npu:block/p/paper6_v"
   },
   "elements": [
     {

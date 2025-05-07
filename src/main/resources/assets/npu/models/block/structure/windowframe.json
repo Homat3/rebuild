@@ -5,8 +5,8 @@
     128
   ],
   "textures": {
-    "0": "npu:block/npunew/structure/windowframe",
-    "particle": "npu:block/npunew/structure/windowframe"
+    "0": "npu:block/w/windowframe",
+    "particle": "npu:block/w/windowframe"
   },
   "elements": [
     {

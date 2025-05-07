@@ -1,10 +1,10 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "0": "npu:block/concrete/concrete_light_blue",
-    "1": "npu:block/ore/iron/iron_block",
-    "4": "npu:block/clay/hardened/hardened_clay_stained_black",
-    "particle": "npu:block/concrete/concrete_light_blue"
+    "0": "npu:block/C/concrete_light_blue",
+    "1": "npu:block/I/iron_block",
+    "4": "npu:block/H/hardened_clay_stained_black",
+    "particle": "npu:block/C/concrete_light_blue"
   },
   "elements": [
     {

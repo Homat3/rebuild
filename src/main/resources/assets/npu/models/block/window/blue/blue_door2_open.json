@@ -1,11 +1,11 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "3": "npu:block/ore/iron/iron_block",
-    "4": "npu:block/npunew/school_logo",
-    "7": "npu:block/concrete/concrete_light_blue",
-    "8": "npu:block/glass/glass_white",
-    "particle": "npu:block/concrete/concrete_light_blue"
+    "3": "npu:block/i/iron_block",
+    "4": "npu:block/n/npu_logo",
+    "7": "npu:block/c/concrete_light_blue",
+    "8": "npu:block/g/glass_white",
+    "particle": "npu:block/c/concrete_light_blue"
   },
   "elements": [
     {

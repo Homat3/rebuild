@@ -1,10 +1,10 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "0": "npu:block/clay/hardened/hardened_clay_stained_cyan",
-    "1": "npu:block/npunew/wall/baiqiangcaizhi",
-    "3": "npu:block/npunew/wall/baiqiangdaiqiangqun",
-    "particle": "npu:block/npunew/wall/baiqiangcaizhi"
+    "0": "npu:block/h/hardened_clay_stained_cyan",
+    "1": "npu:block/w/wall_white",
+    "3": "npu:block/w/wall_white_dado",
+    "particle": "npu:block/w/wall_white"
   },
   "elements": [
     {

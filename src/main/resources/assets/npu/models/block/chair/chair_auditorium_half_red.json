@@ -2,8 +2,8 @@
 	"credit": "Made By NPUcraft",
 	"texture_size": [128, 64],
 	"textures": {
-		"3": "npu:block/npunew/chair/chair_auditorium_half_red",
-		"particle": "npu:block/npunew/chair/chair_auditorium_half_red"
+		"3": "npu:block/c/chair_auditorium_half_red",
+		"particle": "npu:block/c/chair_auditorium_half_red"
 	},
 	"elements": [
 		{

@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "npu:block/cement_road/cement_road_half"
+      "model": "npu:block/road/cement_road_half"
     }
   }
 }

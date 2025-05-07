@@ -5,10 +5,10 @@
     32
   ],
   "textures": {
-    "1": "npu:block/npunew/ao2",
-    "2": "npu:block/npunew/ao1",
-    "3": "npu:block/ore/iron/iron_block",
-    "particle": "npu:block/npunew/ao1"
+    "1": "npu:block/e/external_air_conditioner2",
+    "2": "npu:block/e/external_air_conditioner1",
+    "3": "npu:block/i/iron_block",
+    "particle": "npu:block/e/external_air_conditioner1"
   },
   "elements": [
     {

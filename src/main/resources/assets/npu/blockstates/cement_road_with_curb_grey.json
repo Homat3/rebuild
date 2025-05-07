@@ -1,20 +1,20 @@
 {
   "variants": {
     "facing=north": {
-      "model": "npu:block/cement_road/cement_road_with_curb_grey"
+      "model": "npu:block/road/cement_road_with_curb_grey"
     },
     "facing=east": {
-      "model": "npu:block/cement_road/cement_road_with_curb_grey",
+      "model": "npu:block/road/cement_road_with_curb_grey",
       "y": 90,
       "uvlock": false
     },
     "facing=south": {
-      "model": "npu:block/cement_road/cement_road_with_curb_grey",
+      "model": "npu:block/road/cement_road_with_curb_grey",
       "y": 180,
       "uvlock": false
     },
     "facing=west": {
-      "model": "npu:block/cement_road/cement_road_with_curb_grey",
+      "model": "npu:block/road/cement_road_with_curb_grey",
       "y": 270,
       "uvlock": false
     }

@@ -13,7 +13,7 @@ import org.jetbrains.annotations.NotNull;
 public class GoldenChickenRenderer extends ChickenRenderer
 {
     private static final ResourceLocation GOLDEN_CHICKEN_TEXTURES =
-            new ResourceLocation(Reference.MODID, "textures/entity/golden_chicken.png");
+            new ResourceLocation(Reference.MODID, "textures/entity/g/golden_chicken.png");
 
 
     public GoldenChickenRenderer(EntityRendererProvider.Context context)

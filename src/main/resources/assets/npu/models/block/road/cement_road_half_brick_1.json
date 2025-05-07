@@ -1,9 +1,9 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "4": "npu:block/sroad/sroad1",
-    "5": "npu:block/sroad/sroad3",
-    "particle": "npu:block/sroad/sroad1"
+    "4": "npu:block/c/cement_road_a",
+    "5": "npu:block/c/cement_road_c",
+    "particle": "npu:block/c/cement_road_a"
   },
   "elements": [
     {

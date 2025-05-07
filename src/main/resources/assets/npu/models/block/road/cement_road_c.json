@@ -1,8 +1,8 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "4": "npu:block/g/g21c",
-    "particle": "npu:block/g/g21c"
+    "4": "npu:block/c/cement_road_c",
+    "particle": "npu:block/c/cement_road_c"
   },
   "elements": [
     {

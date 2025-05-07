@@ -5,14 +5,14 @@
     128
   ],
   "textures": {
-    "4": "npu:block/npunew/chest_door/chest_door_tall",
-    "5": "npu:block/planks/planks_birch1",
-    "6": "npu:block/planks/planks_oak1",
-    "7": "npu:block/ore/iron/iron_block1",
-    "8": "npu:block/npunew/computer/lenovo",
-    "9": "npu:block/npunew/computer/screen",
-    "10": "npu:block/npunew/computer/keyboard",
-    "particle": "npu:block/npunew/computer/lenovo"
+    "4": "npu:block/c/chest_door_tall",
+    "5": "npu:block/p/planks_birch1",
+    "6": "npu:block/p/planks_oak1",
+    "7": "npu:block/i/iron_block1",
+    "8": "npu:block/l/lenovo",
+    "9": "npu:block/s/screen",
+    "10": "npu:block/k/keyboard",
+    "particle": "npu:block/l/lenovo"
   },
   "elements": [
     {

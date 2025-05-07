@@ -1,8 +1,8 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "0": "npu:block/g/g31",
-    "particle": "npu:block/g/g31"
+    "0": "npu:block/b/blue_grid_brick",
+    "particle": "npu:block/b/blue_grid_brick"
   },
   "elements": [
     {

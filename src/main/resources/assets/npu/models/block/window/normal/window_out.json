@@ -5,10 +5,10 @@
     256
   ],
   "textures": {
-    "0": "npu:block/clay/hardened/hardened_clay_stained_cyan",
-    "1": "npu:block/ore/quartz/quartz_block_side",
-    "2": "npu:block/concrete/concrete_white",
-    "particle": "npu:block/clay/hardened/hardened_clay_stained_cyan"
+    "0": "npu:block/h/hardened_clay_stained_cyan",
+    "1": "npu:block/q/quartz_block_side",
+    "2": "npu:block/c/concrete_white",
+    "particle": "npu:block/h/hardened_clay_stained_cyan"
   },
   "elements": [
     {

@@ -1,9 +1,9 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "1": "npu:block/mutiezhi/mutiezhishu6",
-    "2": "npu:block/clay/hardened/hardened_clay_stained_cyan",
-    "particle": "npu:block/mutiezhi/mutiezhishu6"
+    "1": "npu:block/p/paper6_v",
+    "2": "npu:block/h/hardened_clay_stained_cyan",
+    "particle": "npu:block/p/paper6_v"
   },
   "elements": [
     {

@@ -1,9 +1,9 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "1": "npu:block/npunew/wooden_wallpaper/paper6",
-    "3": "npu:block/ore/quartz/quartz_block_bottom",
-    "particle": "npu:block/npunew/wooden_wallpaper/paper6"
+    "1": "npu:block/p/paper6",
+    "3": "npu:block/q/quartz_block_bottom",
+    "particle": "npu:block/p/paper6"
   },
   "elements": [
     {

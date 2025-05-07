@@ -17,7 +17,7 @@ import java.util.List;
 
 public class NpuItems
 {
-    // Create grey_brick.json Deferred Register to hold items which will all be registered under the "npu" namespace
+    // Create gray_brick.json Deferred Register to hold items which will all be registered under the "npu" namespace
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Reference.MODID);
     public static final String dataPath = "itemdata/";
 

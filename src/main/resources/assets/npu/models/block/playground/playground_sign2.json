@@ -1,9 +1,9 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "0": "npu:block/concrete/concrete_silver",
-    "1": "npu:block/npunew/sign/sign_drop_garbage",
-    "particle": "npu:block/concrete/concrete_silver"
+    "0": "npu:block/c/concrete_silver",
+    "1": "npu:block/s/sign_drop_garbage",
+    "particle": "npu:block/c/concrete_silver"
   },
   "elements": [
     {

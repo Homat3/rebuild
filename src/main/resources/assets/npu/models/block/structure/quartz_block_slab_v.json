@@ -1,8 +1,8 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "1": "npu:block/ore/quartz/quartz_block_side",
-    "particle": "npu:block/ore/quartz/quartz_block_side"
+    "1": "npu:block/q/quartz_block_side",
+    "particle": "npu:block/q/quartz_block_side"
   },
   "elements": [
     {

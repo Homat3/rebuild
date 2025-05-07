@@ -1,12 +1,12 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "1": "npu:block/ore/iron/iron_block",
-    "2": "npu:block/ore/quartz/quartz_block_bottom",
-    "3": "npu:block/concrete/concrete_white",
-    "5": "npu:block/concrete/concrete_gray",
-    "6": "npu:block/clay/hardened/hardened_clay_stained_cyan",
-    "particle": "npu:block/concrete/concrete_gray"
+    "1": "npu:block/I/iron_block",
+    "2": "npu:block/Q/quartz_block_bottom",
+    "3": "npu:block/C/concrete_white",
+    "5": "npu:block/C/concrete_gray",
+    "6": "npu:block/H/hardened_clay_stained_cyan",
+    "particle": "npu:block/C/concrete_gray"
   },
   "elements": [
     {

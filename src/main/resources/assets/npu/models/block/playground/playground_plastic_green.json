@@ -1,8 +1,8 @@
 {
 	"credit": "Made By NPUcraft",
 	"textures": {
-		"2": "npu:block/npunew/playground/playground_plastic_green",
-		"particle": "npu:block/npunew/playground/playground_plastic_green"
+		"2": "npu:block/p/playground_plastic_green",
+		"particle": "npu:block/p/playground_plastic_green"
 	},
 	"elements": [
 		{

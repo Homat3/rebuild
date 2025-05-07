@@ -2,8 +2,8 @@
   "credit": "Made with Blockbench",
   "texture_size": [128, 128],
   "textures": {
-    "5": "npu:block/npunew/playground/playground_light",
-    "particle": "npu:block/npunew/playground/playground_light"
+    "5": "npu:block/p/playground_light",
+    "particle": "npu:block/p/playground_light"
   },
   "elements": [
     {

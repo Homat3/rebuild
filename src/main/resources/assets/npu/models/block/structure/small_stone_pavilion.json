@@ -1,9 +1,9 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "2": "npu:block/npunew/structure/small_stone_pavilion/texture2",
-    "3": "npu:block/npunew/structure/small_stone_pavilion/texture1",
-    "particle": "npu:block/npunew/structure/small_stone_pavilion/texture1"
+    "2": "npu:block/s/small_stone_pavilion2",
+    "3": "npu:block/s/small_stone_pavilion1",
+    "particle": "npu:block/s/small_stone_pavilion1"
   },
   "elements": [
     {

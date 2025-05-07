@@ -1,8 +1,8 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "0": "npu:block/g/g3",
-    "particle": "npu:block/g/g3"
+    "0": "npu:block/m/marble_pillar",
+    "particle": "npu:block/m/marble_pillar"
   },
   "elements": [
     {

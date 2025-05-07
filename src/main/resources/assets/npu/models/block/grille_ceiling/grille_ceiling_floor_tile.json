@@ -1,10 +1,10 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "0": "npu:block/npunew/structure/wall/double_material_wall",
-    "1": "npu:block/npunew/structure/wall/double_material_wall_dado1",
-    "2": "npu:block/npunew/brick/white_porcelain",
-    "particle": "npu:block/npunew/structure/wall/double_material_wall"
+    "0": "npu:block/D/double_material_wall",
+    "1": "npu:block/D/double_material_wall_dado1",
+    "2": "npu:block/W/wall_white",
+    "particle": "npu:block/D/double_material_wall"
   },
   "elements": [
     {

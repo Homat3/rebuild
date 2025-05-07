@@ -1,8 +1,8 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "3": "npu:block/stripe/stripe1",
-    "particle": "npu:block/stripe/stripe1"
+    "3": "npu:block/s/stripe1",
+    "particle": "npu:block/s/stripe1"
   },
   "elements": [
     {

@@ -1,8 +1,8 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "1": "npu:block/g/g32",
-    "particle": "npu:block/g/g32"
+    "1": "npu:block/p/paper3",
+    "particle": "npu:block/p/paper3"
   },
   "elements": [
     {

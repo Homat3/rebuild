@@ -2,8 +2,8 @@
   "credit": "Made with Blockbench",
   "texture_size": [128, 128],
   "textures": {
-    "3": "npu:block/npunew/playground/playground_badminton_net_side",
-    "particle": "npu:block/npunew/playground/playground_badminton_net_side"
+    "3": "npu:block/p/playground_badminton_net_side",
+    "particle": "npu:block/p/playground_badminton_net_side"
   },
   "elements": [
     {

@@ -1,9 +1,9 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "0": "npu:block/npunew/wall/baicizhuan",
-    "1": "npu:block/npunew/wall/shuinizhuanqiang",
-    "particle": "npu:blocknpunew/wall/baicizhuan"
+    "0": "npu:block/w/wall_white",
+    "1": "npu:block/c/cement_wall_light_white",
+    "particle": "npu:block/w/wall_white"
   },
   "elements": [
     {

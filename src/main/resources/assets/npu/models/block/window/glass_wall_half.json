@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [128, 128],
 	"textures": {
-		"2": "npu:block/npunew/window/glass_wall_half",
-		"particle": "npu:block/npunew/window/glass_wall_half"
+		"2": "npu:block/g/glass_wall_half",
+		"particle": "npu:block/g/glass_wall_half"
 	},
 	"elements": [
 		{

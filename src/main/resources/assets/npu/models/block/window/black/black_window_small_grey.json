@@ -1,10 +1,10 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "0": "npu:block/clay/hardened/hardened_clay_stained_cyan",
-    "3": "npu:block/anvil/anvil_base",
-    "4": "npu:block/glass/glass_black",
-    "particle": "npu:block/clay/hardened/hardened_clay_stained_cyan"
+    "0": "npu:block/h/hardened_clay_stained_cyan",
+    "3": "npu:block/a/anvil_base",
+    "4": "npu:block/g/glass_black",
+    "particle": "npu:block/h/hardened_clay_stained_cyan"
   },
   "elements": [
     {

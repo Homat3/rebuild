@@ -1,8 +1,8 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "4": "npu:block/g/g13",
-    "particle": "npu:block/g/g13"
+    "4": "npu:block/s/small_slate_floor_tiles",
+    "particle": "npu:block/s/small_slate_floor_tiles"
   },
   "elements": [
     {

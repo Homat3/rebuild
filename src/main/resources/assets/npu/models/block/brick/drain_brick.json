@@ -1,9 +1,9 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "0": "npu:block/anvil/anvil_base",
-    "1": "npu:block/concrete/concrete_black",
-    "particle": "npu:block/anvil/anvil_base"
+    "0": "npu:block/a/anvil_base",
+    "1": "npu:block/c/concrete_black",
+    "particle": "npu:block/a/anvil_base"
   },
   "elements": [
     {

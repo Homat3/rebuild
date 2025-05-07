@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"3": "npu:block/npunew/window/window_ceiling",
-		"particle": "npu:block/npunew/window/window_ceiling"
+		"3": "npu:block/w/window_ceiling",
+		"particle": "npu:block/w/window_ceiling"
 	},
 	"elements": [
 		{

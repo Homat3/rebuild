@@ -1,14 +1,14 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "0": "npu:block/cauldron/cauldron_bottom",
-    "1": "npu:block/ore/iron/iron_trapdoor",
-    "2": "npu:block/ore/iron/iron_block",
-    "3": "npu:block/concrete/concrete_white",
-    "4": "npu:block/concrete/concrete_gray",
-    "5": "npu:block/cauldron/cauldron_top",
-    "6": "npu:block/redstone/comparator/comparator_off",
-    "particle": "npu:block/cauldron/cauldron_bottom"
+    "0": "npu:block/c/cauldron_bottom",
+    "1": "npu:block/i/iron_trapdoor",
+    "2": "npu:block/i/iron_block",
+    "3": "npu:block/c/concrete_white",
+    "4": "npu:block/c/concrete_gray",
+    "5": "npu:block/c/cauldron_top",
+    "6": "npu:block/c/comparator_off",
+    "particle": "npu:block/c/cauldron_bottom"
   },
   "elements": [
     {

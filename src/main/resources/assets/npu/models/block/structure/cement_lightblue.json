@@ -1,8 +1,8 @@
 {
 	"credit": "Made By NPUcraft",
 	"textures": {
-		"0": "npu:block/npunew/cube/cement_lightblue",
-		"particle": "npu:block/npunew/cube/cement_lightblue"
+		"0": "npu:block/c/cement_light_blue",
+		"particle": "npu:block/c/cement_light_blue"
 	},
 	"elements": [
 		{

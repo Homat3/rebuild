@@ -1,9 +1,9 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "1": "npu:block/g/g341",
-    "2": "npu:block/g/g342",
-    "particle": "npu:block/g/g342"
+    "1": "npu:block/w/wall_gray_cyan",
+    "2": "npu:block/c/cement_wall_white",
+    "particle": "npu:block/c/cement_wall_white"
   },
   "elements": [
     {

@@ -1,11 +1,11 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "2": "npu:block/npunew/wall/blue_marble_brick",
-    "3": "npu:block/npunew/wall/white_wall_circle",
-    "4": "npu:block/npunew/wooden_wallpaper/paper9_v",
-    "6": "npu:block/npunew/wall/dark_grey_wall",
-    "particle": "npu:block/npunew/wooden_wallpaper/paper9_v"
+    "2": "npu:block/b/blue_marble_brick",
+    "3": "npu:block/w/wall_white_dado",
+    "4": "npu:block/p/paper6_v",
+    "6": "npu:block/w/wall_dark_gray_cyan",
+    "particle": "npu:block/p/paper6_v"
   },
   "elements": [
     {

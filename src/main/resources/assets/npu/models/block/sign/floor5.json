@@ -5,8 +5,8 @@
     32
   ],
   "textures": {
-    "0": "npu:block/npunew/floor/floor5",
-    "particle": "npu:block/npunew/floor/floor5"
+    "0": "npu:block/f/floor5",
+    "particle": "npu:block/f/floor5"
   },
   "elements": [
     {

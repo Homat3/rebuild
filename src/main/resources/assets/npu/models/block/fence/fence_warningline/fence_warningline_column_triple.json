@@ -2,8 +2,8 @@
 	"credit": "Made By NPUcraft",
 	"texture_size": [256, 256],
 	"textures": {
-		"3": "npu:block/npunew/fence/fence_warningline_column_triple",
-		"particle": "npu:block/npunew/fence/fence_warningline_column_triple"
+		"3": "npu:block/f/fence_warningline_column_triple",
+		"particle": "npu:block/f/fence_warningline_column_triple"
 	},
 	"elements": [
 		{

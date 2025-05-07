@@ -1,11 +1,11 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "0": "npu:block/ore/iron/iron_block",
-    "1": "npu:block/ore/quartz/quartz_block_bottom",
-    "2": "npu:block/anvil/anvil_base",
-    "3": "npu:block/npunew/enchanting_table_bottom",
-    "particle": "npu:block/anvil/anvil_base"
+    "0": "npu:block/i/iron_block",
+    "1": "npu:block/q/quartz_block_bottom",
+    "2": "npu:block/a/anvil_base",
+    "3": "npu:block/e/enchanting_table_bottom",
+    "particle": "npu:block/a/anvil_base"
   },
   "elements": [
     {
